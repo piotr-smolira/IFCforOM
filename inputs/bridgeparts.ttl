@@ -1,0 +1,128 @@
+@prefix ex: <https://example.org/ifc#> .
+@prefix schema: <https://schema.org/> .
+
+<https://example.org/ifc/177b2ab0-44cd-461b-98db-c07b85429a90> a ex:IfcBearing ;
+    ex:predefinedType "POT" ;
+    schema:name "Bearing AB15 SØ" .
+
+<https://example.org/ifc/55525a98-c901-4576-bce5-11f4aaaafea9> a ex:IfcSensorType ;
+    ex:aggregates <https://example.org/ifc/16e1bd81-90d8-4fb6-a8ca-1f371155ba1c>,
+        <https://example.org/ifc/232715cb-0f6e-4ab6-84d9-ee35869c3705>,
+        <https://example.org/ifc/c0e7e93c-a62c-4a2e-850b-d2052e21e8d1>,
+        <https://example.org/ifc/c346512a-e172-44e8-b7fd-d32ac79dfdd1> ;
+    ex:predefinedType "MOVEMENTSENSOR" ;
+    schema:name "Displacement Sensor" .
+
+<https://example.org/ifc/5b8ac929-1969-4dda-88b6-3590c9158b43> a ex:IfcSensorType ;
+    ex:aggregates <https://example.org/ifc/6e1f0147-8426-45c1-ae2b-4bcef9135126>,
+        <https://example.org/ifc/820e5ee0-1841-4b22-baad-0f782775bfe4> ;
+    ex:predefinedType "TEMPERATURESENSOR" ;
+    schema:name "Temperature Sensor" .
+
+<https://example.org/ifc/8a095656-1e0f-435d-9181-8d79587d0e1d> a ex:IfcSensorType ;
+    ex:aggregates <https://example.org/ifc/07e3a7aa-68e1-432a-9365-7cf6d0a56a0b>,
+        <https://example.org/ifc/556db47b-c46b-4203-88e2-688c4e88e4b3>,
+        <https://example.org/ifc/f866fa6d-b215-4d40-bc24-cffa9f840820>,
+        <https://example.org/ifc/fe31841c-9d8e-4882-b883-e5122e19f25e> ;
+    ex:predefinedType "PRESSURESENSOR" ;
+    schema:name "Pressure Sensor" .
+
+<https://example.org/ifc/a247d206-5609-4779-8d45-6dfbad2cc73b> a ex:IfcSlab ;
+    ex:predefinedType "APPROACH_SLAB" ;
+    schema:name "Approach Slab East" .
+
+<https://example.org/ifc/c059cf32-abec-46f2-9b20-8f5a51fb5500> a ex:IfcSlab ;
+    ex:predefinedType "FLOOR" ;
+    schema:name "Bridge Deck 102" .
+
+<https://example.org/ifc/d99d1217-fbb5-4702-b6df-80ff36846eef> a ex:IfcProject ;
+    ex:aggregates <https://example.org/ifc/9b55ba86-02ac-4366-94b9-24b1e4327a54> ;
+    ex:compositionType "" ;
+    ex:predefinedType "" ;
+    schema:name "Bridge OM" .
+
+<https://example.org/ifc/07e3a7aa-68e1-432a-9365-7cf6d0a56a0b> a ex:IfcSensor ;
+    ex:description "Pressure sensor at bearing, Abutment 15 S 2" ;
+    ex:predefinedType "PRESSURESENSOR" ;
+    schema:name "Sensor AB0170KWT-42" .
+
+<https://example.org/ifc/16e1bd81-90d8-4fb6-a8ca-1f371155ba1c> a ex:IfcSensor ;
+    ex:description "Displacement meter at bearing, Abutment 15 SØ" ;
+    ex:predefinedType "MOVEMENTSENSOR" ;
+    schema:name "Sensor AB0170KFT-51" .
+
+<https://example.org/ifc/232715cb-0f6e-4ab6-84d9-ee35869c3705> a ex:IfcSensor ;
+    ex:description "Displacement meter at bearing, Abutment 15 S -" ;
+    ex:predefinedType "MOVEMENTSENSOR" ;
+    schema:name "Sensor AB0170KPT-44" .
+
+<https://example.org/ifc/27b7980b-a821-4b65-bb75-a860227a9093> a ex:IfcBridgePart ;
+    ex:compositionType "PARTIAL" ;
+    ex:predefinedType "ABUTMENT" ;
+    schema:name "Abutment 15 S" .
+
+<https://example.org/ifc/3cb25d48-cf67-4861-a020-d94553de5f1c> a ex:IfcBridgePart ;
+    ex:compositionType "PARTIAL" ;
+    ex:predefinedType "ABUTMENT" ;
+    schema:name "Abutment 15 N" .
+
+<https://example.org/ifc/556db47b-c46b-4203-88e2-688c4e88e4b3> a ex:IfcSensor ;
+    ex:description "Pressure sensor at bearing, Abutment 15 N 1" ;
+    ex:predefinedType "PRESSURESENSOR" ;
+    schema:name "Sensor AB0170KWT-31" .
+
+<https://example.org/ifc/6212f324-1075-40ea-a5d6-53863da415f4> a ex:IfcBridge ;
+    ex:aggregates <https://example.org/ifc/b28f4e40-3f88-4ea0-99e6-10f61babebf7>,
+        <https://example.org/ifc/f6152436-c292-459f-8e9e-c71d94ad55f1> ;
+    ex:compositionType "ELEMENT" ;
+    ex:predefinedType "CABLE_STAYED" ;
+    schema:name "East Bridge" .
+
+<https://example.org/ifc/6e1f0147-8426-45c1-ae2b-4bcef9135126> a ex:IfcSensor ;
+    ex:description "Temperature sensor at bearing, Abutment 15 N -" ;
+    ex:predefinedType "TEMPERATURESENSOR" ;
+    schema:name "Sensor AB0170KTT-34" .
+
+<https://example.org/ifc/820e5ee0-1841-4b22-baad-0f782775bfe4> a ex:IfcSensor ;
+    ex:description "Temperature sensor at bearing, Abutment 15 S -" ;
+    ex:predefinedType "TEMPERATURESENSOR" ;
+    schema:name "Sensor AB0170KTT-43" .
+
+<https://example.org/ifc/9b55ba86-02ac-4366-94b9-24b1e4327a54> a ex:IfcSite ;
+    ex:aggregates <https://example.org/ifc/6212f324-1075-40ea-a5d6-53863da415f4> ;
+    ex:compositionType "" ;
+    ex:predefinedType "" ;
+    schema:name "Great Belt Site" .
+
+<https://example.org/ifc/b28f4e40-3f88-4ea0-99e6-10f61babebf7> a ex:IfcBridgePart ;
+    ex:compositionType "ELEMENT" ;
+    ex:predefinedType "SUPERSTRUCTURE" ;
+    schema:name "East Bridge Superstructure" .
+
+<https://example.org/ifc/c0e7e93c-a62c-4a2e-850b-d2052e21e8d1> a ex:IfcSensor ;
+    ex:description "Pressure sensor at bearing, Abutment 15 S 1" ;
+    ex:predefinedType "PRESSURESENSOR" ;
+    schema:name "Sensor AB0170KWT-41" .
+
+<https://example.org/ifc/c346512a-e172-44e8-b7fd-d32ac79dfdd1> a ex:IfcSensor ;
+    ex:description "Displacement meter at bearing, Abutment 15 NØ" ;
+    ex:predefinedType "MOVEMENTSENSOR" ;
+    schema:name "Sensor AB0170KFT-41" .
+
+<https://example.org/ifc/f6152436-c292-459f-8e9e-c71d94ad55f1> a ex:IfcBridgePart ;
+    ex:aggregates <https://example.org/ifc/27b7980b-a821-4b65-bb75-a860227a9093>,
+        <https://example.org/ifc/3cb25d48-cf67-4861-a020-d94553de5f1c> ;
+    ex:compositionType "ELEMENT" ;
+    ex:predefinedType "ABUTMENT" ;
+    schema:name "Abutment 15" .
+
+<https://example.org/ifc/f866fa6d-b215-4d40-bc24-cffa9f840820> a ex:IfcSensor ;
+    ex:description "Pressure sensor at bearing, Abutment 15 N 2" ;
+    ex:predefinedType "PRESSURESENSOR" ;
+    schema:name "Sensor AB0170KWT-32" .
+
+<https://example.org/ifc/fe31841c-9d8e-4882-b883-e5122e19f25e> a ex:IfcSensor ;
+    ex:description "Displacement meter at bearing, Abutment 15 N -" ;
+    ex:predefinedType "MOVEMENTSENSOR" ;
+    schema:name "Sensor AB0170KPT-36" .
+

@@ -1,0 +1,7 @@
+type,name,compositiontype,predefinedtype,aggregates
+IfcProject,Bridge OM,,,1
+IfcBridge,East Bridge,ELEMENT,CABLE_STAYED,2;3
+IfcBridgePart,East Bridge Superstructure,ELEMENT,SUPERSTRUCTURE,
+IfcBridgePart,Abutment 15,ELEMENT,ABUTMENT,4;5
+IfcBridgePart,Abutment 15 N,PARTIAL,ABUTMENT,
+IfcBridgePart,Abutment 15 S,PARTIAL,ABUTMENT,
