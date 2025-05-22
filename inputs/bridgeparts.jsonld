@@ -6,6 +6,10 @@
       "@id": "ex:aggregates",
       "@type": "@id"
     },
+    "contains": {
+      "@id": "ex:contains",
+      "@type": "@id"
+    },
     "type": "@type",
     "name": "schema:name",
     "description": "ex:description",
@@ -77,7 +81,30 @@
       "name": "Abutment 15 S",
       "compositiontype": "PARTIAL",
       "predefinedtype": "ABUTMENT",
-      "aggregates": []
+      "aggregates": [
+        "https://example.org/ifc/BearingAB15S",
+        "https://example.org/ifc/AB0170KFT-41",
+        "https://example.org/ifc/AB0170KFT-51",
+        "https://example.org/ifc/AB0170KPT-36",
+        "https://example.org/ifc/AB0170KPT-44",
+        "https://example.org/ifc/AB0170KWT-31",
+        "https://example.org/ifc/AB0170KWT-32",
+        "https://example.org/ifc/AB0170KWT-41",
+        "https://example.org/ifc/AB0170KWT-42",
+        "https://example.org/ifc/AB0170KTT-34",
+        "https://example.org/ifc/AB0170KTT-43"
+      ]
+    },
+    {
+      "@id": "https://example.org/ifc/BridgeDeck",
+      "type": "ex:IfcBridgePart",
+      "name": "Bridge Deck 15",
+      "compositiontype": "PARTIAL",
+      "predefinedtype": "ABUTMENT",
+      "aggregates": [
+        "https://example.org/ifc/ApproachSlabEast",
+        "https://example.org/ifc/BridgeDeck102"
+      ]
     },
     {
       "@id": "https://example.org/ifc/ApproachSlabEast",

@@ -1,0 +1,2855 @@
+@prefix ifc: <https://example.org/ifc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ifc:IfcActionRequest a owl:Class ;
+    rdfs:label "IfcActionRequest" .
+
+ifc:IfcActor a owl:Class ;
+    rdfs:label "IfcActor" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcActorRole a owl:Class ;
+    rdfs:label "IfcActorRole" .
+
+ifc:IfcActuator a owl:Class ;
+    rdfs:label "IfcActuator" .
+
+ifc:IfcActuatorType a owl:Class ;
+    rdfs:label "IfcActuatorType" .
+
+ifc:IfcAddress a owl:Class ;
+    rdfs:label "IfcAddress" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcAdvancedBrep a owl:Class ;
+    rdfs:label "IfcAdvancedBrep" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcAdvancedBrepWithVoids a owl:Class ;
+    rdfs:label "IfcAdvancedBrepWithVoids" .
+
+ifc:IfcAdvancedFace a owl:Class ;
+    rdfs:label "IfcAdvancedFace" .
+
+ifc:IfcAirTerminal a owl:Class ;
+    rdfs:label "IfcAirTerminal" .
+
+ifc:IfcAirTerminalBox a owl:Class ;
+    rdfs:label "IfcAirTerminalBox" .
+
+ifc:IfcAirTerminalBoxType a owl:Class ;
+    rdfs:label "IfcAirTerminalBoxType" .
+
+ifc:IfcAirTerminalType a owl:Class ;
+    rdfs:label "IfcAirTerminalType" .
+
+ifc:IfcAirToAirHeatRecovery a owl:Class ;
+    rdfs:label "IfcAirToAirHeatRecovery" .
+
+ifc:IfcAirToAirHeatRecoveryType a owl:Class ;
+    rdfs:label "IfcAirToAirHeatRecoveryType" .
+
+ifc:IfcAlarm a owl:Class ;
+    rdfs:label "IfcAlarm" .
+
+ifc:IfcAlarmType a owl:Class ;
+    rdfs:label "IfcAlarmType" .
+
+ifc:IfcAlignment a owl:Class ;
+    rdfs:label "IfcAlignment" .
+
+ifc:IfcAlignmentCant a owl:Class ;
+    rdfs:label "IfcAlignmentCant" .
+
+ifc:IfcAlignmentCantSegment a owl:Class ;
+    rdfs:label "IfcAlignmentCantSegment" .
+
+ifc:IfcAlignmentHorizontal a owl:Class ;
+    rdfs:label "IfcAlignmentHorizontal" .
+
+ifc:IfcAlignmentHorizontalSegment a owl:Class ;
+    rdfs:label "IfcAlignmentHorizontalSegment" .
+
+ifc:IfcAlignmentParameterSegment a owl:Class ;
+    rdfs:label "IfcAlignmentParameterSegment" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcAlignmentSegment a owl:Class ;
+    rdfs:label "IfcAlignmentSegment" .
+
+ifc:IfcAlignmentVertical a owl:Class ;
+    rdfs:label "IfcAlignmentVertical" .
+
+ifc:IfcAlignmentVerticalSegment a owl:Class ;
+    rdfs:label "IfcAlignmentVerticalSegment" .
+
+ifc:IfcAnnotation a owl:Class ;
+    rdfs:label "IfcAnnotation" .
+
+ifc:IfcAnnotationFillArea a owl:Class ;
+    rdfs:label "IfcAnnotationFillArea" .
+
+ifc:IfcApplication a owl:Class ;
+    rdfs:label "IfcApplication" .
+
+ifc:IfcAppliedValue a owl:Class ;
+    rdfs:label "IfcAppliedValue" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcApproval a owl:Class ;
+    rdfs:label "IfcApproval" .
+
+ifc:IfcApprovalRelationship a owl:Class ;
+    rdfs:label "IfcApprovalRelationship" .
+
+ifc:IfcArbitraryClosedProfileDef a owl:Class ;
+    rdfs:label "IfcArbitraryClosedProfileDef" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcArbitraryOpenProfileDef a owl:Class ;
+    rdfs:label "IfcArbitraryOpenProfileDef" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcArbitraryProfileDefWithVoids a owl:Class ;
+    rdfs:label "IfcArbitraryProfileDefWithVoids" .
+
+ifc:IfcAsset a owl:Class ;
+    rdfs:label "IfcAsset" .
+
+ifc:IfcAsymmetricIShapeProfileDef a owl:Class ;
+    rdfs:label "IfcAsymmetricIShapeProfileDef" .
+
+ifc:IfcAudioVisualAppliance a owl:Class ;
+    rdfs:label "IfcAudioVisualAppliance" .
+
+ifc:IfcAudioVisualApplianceType a owl:Class ;
+    rdfs:label "IfcAudioVisualApplianceType" .
+
+ifc:IfcAxis1Placement a owl:Class ;
+    rdfs:label "IfcAxis1Placement" .
+
+ifc:IfcAxis2Placement2D a owl:Class ;
+    rdfs:label "IfcAxis2Placement2D" .
+
+ifc:IfcAxis2Placement3D a owl:Class ;
+    rdfs:label "IfcAxis2Placement3D" .
+
+ifc:IfcAxis2PlacementLinear a owl:Class ;
+    rdfs:label "IfcAxis2PlacementLinear" .
+
+ifc:IfcBSplineCurve a owl:Class ;
+    rdfs:label "IfcBSplineCurve" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBSplineCurveWithKnots a owl:Class ;
+    rdfs:label "IfcBSplineCurveWithKnots" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBSplineSurface a owl:Class ;
+    rdfs:label "IfcBSplineSurface" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBSplineSurfaceWithKnots a owl:Class ;
+    rdfs:label "IfcBSplineSurfaceWithKnots" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBeam a owl:Class ;
+    rdfs:label "IfcBeam" .
+
+ifc:IfcBeamType a owl:Class ;
+    rdfs:label "IfcBeamType" .
+
+ifc:IfcBearing a owl:Class ;
+    rdfs:label "IfcBearing" .
+
+ifc:IfcBearingType a owl:Class ;
+    rdfs:label "IfcBearingType" .
+
+ifc:IfcBlobTexture a owl:Class ;
+    rdfs:label "IfcBlobTexture" .
+
+ifc:IfcBlock a owl:Class ;
+    rdfs:label "IfcBlock" .
+
+ifc:IfcBoiler a owl:Class ;
+    rdfs:label "IfcBoiler" .
+
+ifc:IfcBoilerType a owl:Class ;
+    rdfs:label "IfcBoilerType" .
+
+ifc:IfcBooleanClippingResult a owl:Class ;
+    rdfs:label "IfcBooleanClippingResult" .
+
+ifc:IfcBooleanResult a owl:Class ;
+    rdfs:label "IfcBooleanResult" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBorehole a owl:Class ;
+    rdfs:label "IfcBorehole" .
+
+ifc:IfcBoundaryCondition a owl:Class ;
+    rdfs:label "IfcBoundaryCondition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBoundaryCurve a owl:Class ;
+    rdfs:label "IfcBoundaryCurve" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBoundaryEdgeCondition a owl:Class ;
+    rdfs:label "IfcBoundaryEdgeCondition" .
+
+ifc:IfcBoundaryFaceCondition a owl:Class ;
+    rdfs:label "IfcBoundaryFaceCondition" .
+
+ifc:IfcBoundaryNodeCondition a owl:Class ;
+    rdfs:label "IfcBoundaryNodeCondition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBoundaryNodeConditionWarping a owl:Class ;
+    rdfs:label "IfcBoundaryNodeConditionWarping" .
+
+ifc:IfcBoundedCurve a owl:Class ;
+    rdfs:label "IfcBoundedCurve" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBoundedSurface a owl:Class ;
+    rdfs:label "IfcBoundedSurface" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBoundingBox a owl:Class ;
+    rdfs:label "IfcBoundingBox" .
+
+ifc:IfcBoxedHalfSpace a owl:Class ;
+    rdfs:label "IfcBoxedHalfSpace" .
+
+ifc:IfcBridge a owl:Class ;
+    rdfs:label "IfcBridge" .
+
+ifc:IfcBridgePart a owl:Class ;
+    rdfs:label "IfcBridgePart" .
+
+ifc:IfcBuilding a owl:Class ;
+    rdfs:label "IfcBuilding" .
+
+ifc:IfcBuildingElementPart a owl:Class ;
+    rdfs:label "IfcBuildingElementPart" .
+
+ifc:IfcBuildingElementPartType a owl:Class ;
+    rdfs:label "IfcBuildingElementPartType" .
+
+ifc:IfcBuildingElementProxy a owl:Class ;
+    rdfs:label "IfcBuildingElementProxy" .
+
+ifc:IfcBuildingElementProxyType a owl:Class ;
+    rdfs:label "IfcBuildingElementProxyType" .
+
+ifc:IfcBuildingStorey a owl:Class ;
+    rdfs:label "IfcBuildingStorey" .
+
+ifc:IfcBuildingSystem a owl:Class ;
+    rdfs:label "IfcBuildingSystem" .
+
+ifc:IfcBuiltElement a owl:Class ;
+    rdfs:label "IfcBuiltElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBuiltElementType a owl:Class ;
+    rdfs:label "IfcBuiltElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcBuiltSystem a owl:Class ;
+    rdfs:label "IfcBuiltSystem" .
+
+ifc:IfcBurner a owl:Class ;
+    rdfs:label "IfcBurner" .
+
+ifc:IfcBurnerType a owl:Class ;
+    rdfs:label "IfcBurnerType" .
+
+ifc:IfcCShapeProfileDef a owl:Class ;
+    rdfs:label "IfcCShapeProfileDef" .
+
+ifc:IfcCableCarrierFitting a owl:Class ;
+    rdfs:label "IfcCableCarrierFitting" .
+
+ifc:IfcCableCarrierFittingType a owl:Class ;
+    rdfs:label "IfcCableCarrierFittingType" .
+
+ifc:IfcCableCarrierSegment a owl:Class ;
+    rdfs:label "IfcCableCarrierSegment" .
+
+ifc:IfcCableCarrierSegmentType a owl:Class ;
+    rdfs:label "IfcCableCarrierSegmentType" .
+
+ifc:IfcCableFitting a owl:Class ;
+    rdfs:label "IfcCableFitting" .
+
+ifc:IfcCableFittingType a owl:Class ;
+    rdfs:label "IfcCableFittingType" .
+
+ifc:IfcCableSegment a owl:Class ;
+    rdfs:label "IfcCableSegment" .
+
+ifc:IfcCableSegmentType a owl:Class ;
+    rdfs:label "IfcCableSegmentType" .
+
+ifc:IfcCaissonFoundation a owl:Class ;
+    rdfs:label "IfcCaissonFoundation" .
+
+ifc:IfcCaissonFoundationType a owl:Class ;
+    rdfs:label "IfcCaissonFoundationType" .
+
+ifc:IfcCartesianPoint a owl:Class ;
+    rdfs:label "IfcCartesianPoint" .
+
+ifc:IfcCartesianPointList a owl:Class ;
+    rdfs:label "IfcCartesianPointList" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCartesianPointList2D a owl:Class ;
+    rdfs:label "IfcCartesianPointList2D" .
+
+ifc:IfcCartesianPointList3D a owl:Class ;
+    rdfs:label "IfcCartesianPointList3D" .
+
+ifc:IfcCartesianTransformationOperator a owl:Class ;
+    rdfs:label "IfcCartesianTransformationOperator" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCartesianTransformationOperator2D a owl:Class ;
+    rdfs:label "IfcCartesianTransformationOperator2D" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCartesianTransformationOperator2DnonUniform a owl:Class ;
+    rdfs:label "IfcCartesianTransformationOperator2DnonUniform" .
+
+ifc:IfcCartesianTransformationOperator3D a owl:Class ;
+    rdfs:label "IfcCartesianTransformationOperator3D" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCartesianTransformationOperator3DnonUniform a owl:Class ;
+    rdfs:label "IfcCartesianTransformationOperator3DnonUniform" .
+
+ifc:IfcCenterLineProfileDef a owl:Class ;
+    rdfs:label "IfcCenterLineProfileDef" .
+
+ifc:IfcChiller a owl:Class ;
+    rdfs:label "IfcChiller" .
+
+ifc:IfcChillerType a owl:Class ;
+    rdfs:label "IfcChillerType" .
+
+ifc:IfcChimney a owl:Class ;
+    rdfs:label "IfcChimney" .
+
+ifc:IfcChimneyType a owl:Class ;
+    rdfs:label "IfcChimneyType" .
+
+ifc:IfcCircle a owl:Class ;
+    rdfs:label "IfcCircle" .
+
+ifc:IfcCircleHollowProfileDef a owl:Class ;
+    rdfs:label "IfcCircleHollowProfileDef" .
+
+ifc:IfcCircleProfileDef a owl:Class ;
+    rdfs:label "IfcCircleProfileDef" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCivilElement a owl:Class ;
+    rdfs:label "IfcCivilElement" .
+
+ifc:IfcCivilElementType a owl:Class ;
+    rdfs:label "IfcCivilElementType" .
+
+ifc:IfcClassification a owl:Class ;
+    rdfs:label "IfcClassification" .
+
+ifc:IfcClassificationReference a owl:Class ;
+    rdfs:label "IfcClassificationReference" .
+
+ifc:IfcClosedShell a owl:Class ;
+    rdfs:label "IfcClosedShell" .
+
+ifc:IfcClothoid a owl:Class ;
+    rdfs:label "IfcClothoid" .
+
+ifc:IfcCoil a owl:Class ;
+    rdfs:label "IfcCoil" .
+
+ifc:IfcCoilType a owl:Class ;
+    rdfs:label "IfcCoilType" .
+
+ifc:IfcColourRgb a owl:Class ;
+    rdfs:label "IfcColourRgb" .
+
+ifc:IfcColourRgbList a owl:Class ;
+    rdfs:label "IfcColourRgbList" .
+
+ifc:IfcColourSpecification a owl:Class ;
+    rdfs:label "IfcColourSpecification" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcColumn a owl:Class ;
+    rdfs:label "IfcColumn" .
+
+ifc:IfcColumnType a owl:Class ;
+    rdfs:label "IfcColumnType" .
+
+ifc:IfcCommunicationsAppliance a owl:Class ;
+    rdfs:label "IfcCommunicationsAppliance" .
+
+ifc:IfcCommunicationsApplianceType a owl:Class ;
+    rdfs:label "IfcCommunicationsApplianceType" .
+
+ifc:IfcComplexProperty a owl:Class ;
+    rdfs:label "IfcComplexProperty" .
+
+ifc:IfcComplexPropertyTemplate a owl:Class ;
+    rdfs:label "IfcComplexPropertyTemplate" .
+
+ifc:IfcCompositeCurve a owl:Class ;
+    rdfs:label "IfcCompositeCurve" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCompositeCurveOnSurface a owl:Class ;
+    rdfs:label "IfcCompositeCurveOnSurface" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCompositeCurveSegment a owl:Class ;
+    rdfs:label "IfcCompositeCurveSegment" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCompositeProfileDef a owl:Class ;
+    rdfs:label "IfcCompositeProfileDef" .
+
+ifc:IfcCompressor a owl:Class ;
+    rdfs:label "IfcCompressor" .
+
+ifc:IfcCompressorType a owl:Class ;
+    rdfs:label "IfcCompressorType" .
+
+ifc:IfcCondenser a owl:Class ;
+    rdfs:label "IfcCondenser" .
+
+ifc:IfcCondenserType a owl:Class ;
+    rdfs:label "IfcCondenserType" .
+
+ifc:IfcConic a owl:Class ;
+    rdfs:label "IfcConic" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcConnectedFaceSet a owl:Class ;
+    rdfs:label "IfcConnectedFaceSet" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcConnectionCurveGeometry a owl:Class ;
+    rdfs:label "IfcConnectionCurveGeometry" .
+
+ifc:IfcConnectionGeometry a owl:Class ;
+    rdfs:label "IfcConnectionGeometry" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcConnectionPointEccentricity a owl:Class ;
+    rdfs:label "IfcConnectionPointEccentricity" .
+
+ifc:IfcConnectionPointGeometry a owl:Class ;
+    rdfs:label "IfcConnectionPointGeometry" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcConnectionSurfaceGeometry a owl:Class ;
+    rdfs:label "IfcConnectionSurfaceGeometry" .
+
+ifc:IfcConnectionVolumeGeometry a owl:Class ;
+    rdfs:label "IfcConnectionVolumeGeometry" .
+
+ifc:IfcConstraint a owl:Class ;
+    rdfs:label "IfcConstraint" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcConstructionEquipmentResource a owl:Class ;
+    rdfs:label "IfcConstructionEquipmentResource" .
+
+ifc:IfcConstructionEquipmentResourceType a owl:Class ;
+    rdfs:label "IfcConstructionEquipmentResourceType" .
+
+ifc:IfcConstructionMaterialResource a owl:Class ;
+    rdfs:label "IfcConstructionMaterialResource" .
+
+ifc:IfcConstructionMaterialResourceType a owl:Class ;
+    rdfs:label "IfcConstructionMaterialResourceType" .
+
+ifc:IfcConstructionProductResource a owl:Class ;
+    rdfs:label "IfcConstructionProductResource" .
+
+ifc:IfcConstructionProductResourceType a owl:Class ;
+    rdfs:label "IfcConstructionProductResourceType" .
+
+ifc:IfcConstructionResource a owl:Class ;
+    rdfs:label "IfcConstructionResource" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcConstructionResourceType a owl:Class ;
+    rdfs:label "IfcConstructionResourceType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcContext a owl:Class ;
+    rdfs:label "IfcContext" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcContextDependentUnit a owl:Class ;
+    rdfs:label "IfcContextDependentUnit" .
+
+ifc:IfcControl a owl:Class ;
+    rdfs:label "IfcControl" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcController a owl:Class ;
+    rdfs:label "IfcController" .
+
+ifc:IfcControllerType a owl:Class ;
+    rdfs:label "IfcControllerType" .
+
+ifc:IfcConversionBasedUnit a owl:Class ;
+    rdfs:label "IfcConversionBasedUnit" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcConversionBasedUnitWithOffset a owl:Class ;
+    rdfs:label "IfcConversionBasedUnitWithOffset" .
+
+ifc:IfcConveyorSegment a owl:Class ;
+    rdfs:label "IfcConveyorSegment" .
+
+ifc:IfcConveyorSegmentType a owl:Class ;
+    rdfs:label "IfcConveyorSegmentType" .
+
+ifc:IfcCooledBeam a owl:Class ;
+    rdfs:label "IfcCooledBeam" .
+
+ifc:IfcCooledBeamType a owl:Class ;
+    rdfs:label "IfcCooledBeamType" .
+
+ifc:IfcCoolingTower a owl:Class ;
+    rdfs:label "IfcCoolingTower" .
+
+ifc:IfcCoolingTowerType a owl:Class ;
+    rdfs:label "IfcCoolingTowerType" .
+
+ifc:IfcCoordinateOperation a owl:Class ;
+    rdfs:label "IfcCoordinateOperation" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCoordinateReferenceSystem a owl:Class ;
+    rdfs:label "IfcCoordinateReferenceSystem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCosineSpiral a owl:Class ;
+    rdfs:label "IfcCosineSpiral" .
+
+ifc:IfcCostItem a owl:Class ;
+    rdfs:label "IfcCostItem" .
+
+ifc:IfcCostSchedule a owl:Class ;
+    rdfs:label "IfcCostSchedule" .
+
+ifc:IfcCostValue a owl:Class ;
+    rdfs:label "IfcCostValue" .
+
+ifc:IfcCourse a owl:Class ;
+    rdfs:label "IfcCourse" .
+
+ifc:IfcCourseType a owl:Class ;
+    rdfs:label "IfcCourseType" .
+
+ifc:IfcCovering a owl:Class ;
+    rdfs:label "IfcCovering" .
+
+ifc:IfcCoveringType a owl:Class ;
+    rdfs:label "IfcCoveringType" .
+
+ifc:IfcCrewResource a owl:Class ;
+    rdfs:label "IfcCrewResource" .
+
+ifc:IfcCrewResourceType a owl:Class ;
+    rdfs:label "IfcCrewResourceType" .
+
+ifc:IfcCsgPrimitive3D a owl:Class ;
+    rdfs:label "IfcCsgPrimitive3D" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCsgSolid a owl:Class ;
+    rdfs:label "IfcCsgSolid" .
+
+ifc:IfcCurrencyRelationship a owl:Class ;
+    rdfs:label "IfcCurrencyRelationship" .
+
+ifc:IfcCurtainWall a owl:Class ;
+    rdfs:label "IfcCurtainWall" .
+
+ifc:IfcCurtainWallType a owl:Class ;
+    rdfs:label "IfcCurtainWallType" .
+
+ifc:IfcCurve a owl:Class ;
+    rdfs:label "IfcCurve" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcCurveBoundedPlane a owl:Class ;
+    rdfs:label "IfcCurveBoundedPlane" .
+
+ifc:IfcCurveBoundedSurface a owl:Class ;
+    rdfs:label "IfcCurveBoundedSurface" .
+
+ifc:IfcCurveSegment a owl:Class ;
+    rdfs:label "IfcCurveSegment" .
+
+ifc:IfcCurveStyle a owl:Class ;
+    rdfs:label "IfcCurveStyle" .
+
+ifc:IfcCurveStyleFont a owl:Class ;
+    rdfs:label "IfcCurveStyleFont" .
+
+ifc:IfcCurveStyleFontAndScaling a owl:Class ;
+    rdfs:label "IfcCurveStyleFontAndScaling" .
+
+ifc:IfcCurveStyleFontPattern a owl:Class ;
+    rdfs:label "IfcCurveStyleFontPattern" .
+
+ifc:IfcCylindricalSurface a owl:Class ;
+    rdfs:label "IfcCylindricalSurface" .
+
+ifc:IfcDamper a owl:Class ;
+    rdfs:label "IfcDamper" .
+
+ifc:IfcDamperType a owl:Class ;
+    rdfs:label "IfcDamperType" .
+
+ifc:IfcDeepFoundation a owl:Class ;
+    rdfs:label "IfcDeepFoundation" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDeepFoundationType a owl:Class ;
+    rdfs:label "IfcDeepFoundationType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDerivedProfileDef a owl:Class ;
+    rdfs:label "IfcDerivedProfileDef" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDerivedUnit a owl:Class ;
+    rdfs:label "IfcDerivedUnit" .
+
+ifc:IfcDerivedUnitElement a owl:Class ;
+    rdfs:label "IfcDerivedUnitElement" .
+
+ifc:IfcDimensionalExponents a owl:Class ;
+    rdfs:label "IfcDimensionalExponents" .
+
+ifc:IfcDirection a owl:Class ;
+    rdfs:label "IfcDirection" .
+
+ifc:IfcDirectrixCurveSweptAreaSolid a owl:Class ;
+    rdfs:label "IfcDirectrixCurveSweptAreaSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDirectrixDerivedReferenceSweptAreaSolid a owl:Class ;
+    rdfs:label "IfcDirectrixDerivedReferenceSweptAreaSolid" .
+
+ifc:IfcDiscreteAccessory a owl:Class ;
+    rdfs:label "IfcDiscreteAccessory" .
+
+ifc:IfcDiscreteAccessoryType a owl:Class ;
+    rdfs:label "IfcDiscreteAccessoryType" .
+
+ifc:IfcDistributionBoard a owl:Class ;
+    rdfs:label "IfcDistributionBoard" .
+
+ifc:IfcDistributionBoardType a owl:Class ;
+    rdfs:label "IfcDistributionBoardType" .
+
+ifc:IfcDistributionChamberElement a owl:Class ;
+    rdfs:label "IfcDistributionChamberElement" .
+
+ifc:IfcDistributionChamberElementType a owl:Class ;
+    rdfs:label "IfcDistributionChamberElementType" .
+
+ifc:IfcDistributionCircuit a owl:Class ;
+    rdfs:label "IfcDistributionCircuit" .
+
+ifc:IfcDistributionControlElement a owl:Class ;
+    rdfs:label "IfcDistributionControlElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDistributionControlElementType a owl:Class ;
+    rdfs:label "IfcDistributionControlElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDistributionElement a owl:Class ;
+    rdfs:label "IfcDistributionElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDistributionElementType a owl:Class ;
+    rdfs:label "IfcDistributionElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDistributionFlowElement a owl:Class ;
+    rdfs:label "IfcDistributionFlowElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDistributionFlowElementType a owl:Class ;
+    rdfs:label "IfcDistributionFlowElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDistributionPort a owl:Class ;
+    rdfs:label "IfcDistributionPort" .
+
+ifc:IfcDistributionSystem a owl:Class ;
+    rdfs:label "IfcDistributionSystem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcDocumentInformation a owl:Class ;
+    rdfs:label "IfcDocumentInformation" .
+
+ifc:IfcDocumentInformationRelationship a owl:Class ;
+    rdfs:label "IfcDocumentInformationRelationship" .
+
+ifc:IfcDocumentReference a owl:Class ;
+    rdfs:label "IfcDocumentReference" .
+
+ifc:IfcDoor a owl:Class ;
+    rdfs:label "IfcDoor" .
+
+ifc:IfcDoorLiningProperties a owl:Class ;
+    rdfs:label "IfcDoorLiningProperties" .
+
+ifc:IfcDoorPanelProperties a owl:Class ;
+    rdfs:label "IfcDoorPanelProperties" .
+
+ifc:IfcDoorType a owl:Class ;
+    rdfs:label "IfcDoorType" .
+
+ifc:IfcDraughtingPreDefinedColour a owl:Class ;
+    rdfs:label "IfcDraughtingPreDefinedColour" .
+
+ifc:IfcDraughtingPreDefinedCurveFont a owl:Class ;
+    rdfs:label "IfcDraughtingPreDefinedCurveFont" .
+
+ifc:IfcDuctFitting a owl:Class ;
+    rdfs:label "IfcDuctFitting" .
+
+ifc:IfcDuctFittingType a owl:Class ;
+    rdfs:label "IfcDuctFittingType" .
+
+ifc:IfcDuctSegment a owl:Class ;
+    rdfs:label "IfcDuctSegment" .
+
+ifc:IfcDuctSegmentType a owl:Class ;
+    rdfs:label "IfcDuctSegmentType" .
+
+ifc:IfcDuctSilencer a owl:Class ;
+    rdfs:label "IfcDuctSilencer" .
+
+ifc:IfcDuctSilencerType a owl:Class ;
+    rdfs:label "IfcDuctSilencerType" .
+
+ifc:IfcEarthworksCut a owl:Class ;
+    rdfs:label "IfcEarthworksCut" .
+
+ifc:IfcEarthworksElement a owl:Class ;
+    rdfs:label "IfcEarthworksElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcEarthworksFill a owl:Class ;
+    rdfs:label "IfcEarthworksFill" .
+
+ifc:IfcEdge a owl:Class ;
+    rdfs:label "IfcEdge" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcEdgeCurve a owl:Class ;
+    rdfs:label "IfcEdgeCurve" .
+
+ifc:IfcEdgeLoop a owl:Class ;
+    rdfs:label "IfcEdgeLoop" .
+
+ifc:IfcElectricAppliance a owl:Class ;
+    rdfs:label "IfcElectricAppliance" .
+
+ifc:IfcElectricApplianceType a owl:Class ;
+    rdfs:label "IfcElectricApplianceType" .
+
+ifc:IfcElectricDistributionBoard a owl:Class ;
+    rdfs:label "IfcElectricDistributionBoard" .
+
+ifc:IfcElectricDistributionBoardType a owl:Class ;
+    rdfs:label "IfcElectricDistributionBoardType" .
+
+ifc:IfcElectricFlowStorageDevice a owl:Class ;
+    rdfs:label "IfcElectricFlowStorageDevice" .
+
+ifc:IfcElectricFlowStorageDeviceType a owl:Class ;
+    rdfs:label "IfcElectricFlowStorageDeviceType" .
+
+ifc:IfcElectricFlowTreatmentDevice a owl:Class ;
+    rdfs:label "IfcElectricFlowTreatmentDevice" .
+
+ifc:IfcElectricFlowTreatmentDeviceType a owl:Class ;
+    rdfs:label "IfcElectricFlowTreatmentDeviceType" .
+
+ifc:IfcElectricGenerator a owl:Class ;
+    rdfs:label "IfcElectricGenerator" .
+
+ifc:IfcElectricGeneratorType a owl:Class ;
+    rdfs:label "IfcElectricGeneratorType" .
+
+ifc:IfcElectricMotor a owl:Class ;
+    rdfs:label "IfcElectricMotor" .
+
+ifc:IfcElectricMotorType a owl:Class ;
+    rdfs:label "IfcElectricMotorType" .
+
+ifc:IfcElectricTimeControl a owl:Class ;
+    rdfs:label "IfcElectricTimeControl" .
+
+ifc:IfcElectricTimeControlType a owl:Class ;
+    rdfs:label "IfcElectricTimeControlType" .
+
+ifc:IfcElement a owl:Class ;
+    rdfs:label "IfcElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcElementAssembly a owl:Class ;
+    rdfs:label "IfcElementAssembly" .
+
+ifc:IfcElementAssemblyType a owl:Class ;
+    rdfs:label "IfcElementAssemblyType" .
+
+ifc:IfcElementComponent a owl:Class ;
+    rdfs:label "IfcElementComponent" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcElementComponentType a owl:Class ;
+    rdfs:label "IfcElementComponentType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcElementQuantity a owl:Class ;
+    rdfs:label "IfcElementQuantity" .
+
+ifc:IfcElementType a owl:Class ;
+    rdfs:label "IfcElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcElementarySurface a owl:Class ;
+    rdfs:label "IfcElementarySurface" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcEllipse a owl:Class ;
+    rdfs:label "IfcEllipse" .
+
+ifc:IfcEllipseProfileDef a owl:Class ;
+    rdfs:label "IfcEllipseProfileDef" .
+
+ifc:IfcEnergyConversionDevice a owl:Class ;
+    rdfs:label "IfcEnergyConversionDevice" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcEnergyConversionDeviceType a owl:Class ;
+    rdfs:label "IfcEnergyConversionDeviceType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcEngine a owl:Class ;
+    rdfs:label "IfcEngine" .
+
+ifc:IfcEngineType a owl:Class ;
+    rdfs:label "IfcEngineType" .
+
+ifc:IfcEvaporativeCooler a owl:Class ;
+    rdfs:label "IfcEvaporativeCooler" .
+
+ifc:IfcEvaporativeCoolerType a owl:Class ;
+    rdfs:label "IfcEvaporativeCoolerType" .
+
+ifc:IfcEvaporator a owl:Class ;
+    rdfs:label "IfcEvaporator" .
+
+ifc:IfcEvaporatorType a owl:Class ;
+    rdfs:label "IfcEvaporatorType" .
+
+ifc:IfcEvent a owl:Class ;
+    rdfs:label "IfcEvent" .
+
+ifc:IfcEventTime a owl:Class ;
+    rdfs:label "IfcEventTime" .
+
+ifc:IfcEventType a owl:Class ;
+    rdfs:label "IfcEventType" .
+
+ifc:IfcExtendedProperties a owl:Class ;
+    rdfs:label "IfcExtendedProperties" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcExternalInformation a owl:Class ;
+    rdfs:label "IfcExternalInformation" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcExternalReference a owl:Class ;
+    rdfs:label "IfcExternalReference" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcExternalReferenceRelationship a owl:Class ;
+    rdfs:label "IfcExternalReferenceRelationship" .
+
+ifc:IfcExternalSpatialElement a owl:Class ;
+    rdfs:label "IfcExternalSpatialElement" .
+
+ifc:IfcExternalSpatialStructureElement a owl:Class ;
+    rdfs:label "IfcExternalSpatialStructureElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcExternallyDefinedHatchStyle a owl:Class ;
+    rdfs:label "IfcExternallyDefinedHatchStyle" .
+
+ifc:IfcExternallyDefinedSurfaceStyle a owl:Class ;
+    rdfs:label "IfcExternallyDefinedSurfaceStyle" .
+
+ifc:IfcExternallyDefinedTextFont a owl:Class ;
+    rdfs:label "IfcExternallyDefinedTextFont" .
+
+ifc:IfcExtrudedAreaSolid a owl:Class ;
+    rdfs:label "IfcExtrudedAreaSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcExtrudedAreaSolidTapered a owl:Class ;
+    rdfs:label "IfcExtrudedAreaSolidTapered" .
+
+ifc:IfcFace a owl:Class ;
+    rdfs:label "IfcFace" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFaceBasedSurfaceModel a owl:Class ;
+    rdfs:label "IfcFaceBasedSurfaceModel" .
+
+ifc:IfcFaceBound a owl:Class ;
+    rdfs:label "IfcFaceBound" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFaceOuterBound a owl:Class ;
+    rdfs:label "IfcFaceOuterBound" .
+
+ifc:IfcFaceSurface a owl:Class ;
+    rdfs:label "IfcFaceSurface" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFacetedBrep a owl:Class ;
+    rdfs:label "IfcFacetedBrep" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFacetedBrepWithVoids a owl:Class ;
+    rdfs:label "IfcFacetedBrepWithVoids" .
+
+ifc:IfcFacility a owl:Class ;
+    rdfs:label "IfcFacility" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFacilityPart a owl:Class ;
+    rdfs:label "IfcFacilityPart" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFacilityPartCommon a owl:Class ;
+    rdfs:label "IfcFacilityPartCommon" .
+
+ifc:IfcFailureConnectionCondition a owl:Class ;
+    rdfs:label "IfcFailureConnectionCondition" .
+
+ifc:IfcFan a owl:Class ;
+    rdfs:label "IfcFan" .
+
+ifc:IfcFanType a owl:Class ;
+    rdfs:label "IfcFanType" .
+
+ifc:IfcFastener a owl:Class ;
+    rdfs:label "IfcFastener" .
+
+ifc:IfcFastenerType a owl:Class ;
+    rdfs:label "IfcFastenerType" .
+
+ifc:IfcFeatureElement a owl:Class ;
+    rdfs:label "IfcFeatureElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFeatureElementAddition a owl:Class ;
+    rdfs:label "IfcFeatureElementAddition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFeatureElementSubtraction a owl:Class ;
+    rdfs:label "IfcFeatureElementSubtraction" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFillAreaStyle a owl:Class ;
+    rdfs:label "IfcFillAreaStyle" .
+
+ifc:IfcFillAreaStyleHatching a owl:Class ;
+    rdfs:label "IfcFillAreaStyleHatching" .
+
+ifc:IfcFillAreaStyleTiles a owl:Class ;
+    rdfs:label "IfcFillAreaStyleTiles" .
+
+ifc:IfcFilter a owl:Class ;
+    rdfs:label "IfcFilter" .
+
+ifc:IfcFilterType a owl:Class ;
+    rdfs:label "IfcFilterType" .
+
+ifc:IfcFireSuppressionTerminal a owl:Class ;
+    rdfs:label "IfcFireSuppressionTerminal" .
+
+ifc:IfcFireSuppressionTerminalType a owl:Class ;
+    rdfs:label "IfcFireSuppressionTerminalType" .
+
+ifc:IfcFixedReferenceSweptAreaSolid a owl:Class ;
+    rdfs:label "IfcFixedReferenceSweptAreaSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowController a owl:Class ;
+    rdfs:label "IfcFlowController" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowControllerType a owl:Class ;
+    rdfs:label "IfcFlowControllerType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowFitting a owl:Class ;
+    rdfs:label "IfcFlowFitting" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowFittingType a owl:Class ;
+    rdfs:label "IfcFlowFittingType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowInstrument a owl:Class ;
+    rdfs:label "IfcFlowInstrument" .
+
+ifc:IfcFlowInstrumentType a owl:Class ;
+    rdfs:label "IfcFlowInstrumentType" .
+
+ifc:IfcFlowMeter a owl:Class ;
+    rdfs:label "IfcFlowMeter" .
+
+ifc:IfcFlowMeterType a owl:Class ;
+    rdfs:label "IfcFlowMeterType" .
+
+ifc:IfcFlowMovingDevice a owl:Class ;
+    rdfs:label "IfcFlowMovingDevice" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowMovingDeviceType a owl:Class ;
+    rdfs:label "IfcFlowMovingDeviceType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowSegment a owl:Class ;
+    rdfs:label "IfcFlowSegment" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowSegmentType a owl:Class ;
+    rdfs:label "IfcFlowSegmentType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowStorageDevice a owl:Class ;
+    rdfs:label "IfcFlowStorageDevice" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowStorageDeviceType a owl:Class ;
+    rdfs:label "IfcFlowStorageDeviceType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowTerminal a owl:Class ;
+    rdfs:label "IfcFlowTerminal" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowTerminalType a owl:Class ;
+    rdfs:label "IfcFlowTerminalType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowTreatmentDevice a owl:Class ;
+    rdfs:label "IfcFlowTreatmentDevice" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFlowTreatmentDeviceType a owl:Class ;
+    rdfs:label "IfcFlowTreatmentDeviceType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFooting a owl:Class ;
+    rdfs:label "IfcFooting" .
+
+ifc:IfcFootingType a owl:Class ;
+    rdfs:label "IfcFootingType" .
+
+ifc:IfcFurnishingElement a owl:Class ;
+    rdfs:label "IfcFurnishingElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFurnishingElementType a owl:Class ;
+    rdfs:label "IfcFurnishingElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcFurniture a owl:Class ;
+    rdfs:label "IfcFurniture" .
+
+ifc:IfcFurnitureType a owl:Class ;
+    rdfs:label "IfcFurnitureType" .
+
+ifc:IfcGeographicCRS a owl:Class ;
+    rdfs:label "IfcGeographicCRS" .
+
+ifc:IfcGeographicElement a owl:Class ;
+    rdfs:label "IfcGeographicElement" .
+
+ifc:IfcGeographicElementType a owl:Class ;
+    rdfs:label "IfcGeographicElementType" .
+
+ifc:IfcGeometricCurveSet a owl:Class ;
+    rdfs:label "IfcGeometricCurveSet" .
+
+ifc:IfcGeometricRepresentationContext a owl:Class ;
+    rdfs:label "IfcGeometricRepresentationContext" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcGeometricRepresentationItem a owl:Class ;
+    rdfs:label "IfcGeometricRepresentationItem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcGeometricRepresentationSubContext a owl:Class ;
+    rdfs:label "IfcGeometricRepresentationSubContext" .
+
+ifc:IfcGeometricSet a owl:Class ;
+    rdfs:label "IfcGeometricSet" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcGeomodel a owl:Class ;
+    rdfs:label "IfcGeomodel" .
+
+ifc:IfcGeoslice a owl:Class ;
+    rdfs:label "IfcGeoslice" .
+
+ifc:IfcGeotechnicalAssembly a owl:Class ;
+    rdfs:label "IfcGeotechnicalAssembly" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcGeotechnicalElement a owl:Class ;
+    rdfs:label "IfcGeotechnicalElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcGeotechnicalStratum a owl:Class ;
+    rdfs:label "IfcGeotechnicalStratum" .
+
+ifc:IfcGradientCurve a owl:Class ;
+    rdfs:label "IfcGradientCurve" .
+
+ifc:IfcGrid a owl:Class ;
+    rdfs:label "IfcGrid" .
+
+ifc:IfcGridAxis a owl:Class ;
+    rdfs:label "IfcGridAxis" .
+
+ifc:IfcGridPlacement a owl:Class ;
+    rdfs:label "IfcGridPlacement" .
+
+ifc:IfcGroup a owl:Class ;
+    rdfs:label "IfcGroup" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcHalfSpaceSolid a owl:Class ;
+    rdfs:label "IfcHalfSpaceSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcHeatExchanger a owl:Class ;
+    rdfs:label "IfcHeatExchanger" .
+
+ifc:IfcHeatExchangerType a owl:Class ;
+    rdfs:label "IfcHeatExchangerType" .
+
+ifc:IfcHumidifier a owl:Class ;
+    rdfs:label "IfcHumidifier" .
+
+ifc:IfcHumidifierType a owl:Class ;
+    rdfs:label "IfcHumidifierType" .
+
+ifc:IfcIShapeProfileDef a owl:Class ;
+    rdfs:label "IfcIShapeProfileDef" .
+
+ifc:IfcImageTexture a owl:Class ;
+    rdfs:label "IfcImageTexture" .
+
+ifc:IfcImpactProtectionDevice a owl:Class ;
+    rdfs:label "IfcImpactProtectionDevice" .
+
+ifc:IfcImpactProtectionDeviceType a owl:Class ;
+    rdfs:label "IfcImpactProtectionDeviceType" .
+
+ifc:IfcIndexedColourMap a owl:Class ;
+    rdfs:label "IfcIndexedColourMap" .
+
+ifc:IfcIndexedPolyCurve a owl:Class ;
+    rdfs:label "IfcIndexedPolyCurve" .
+
+ifc:IfcIndexedPolygonalFace a owl:Class ;
+    rdfs:label "IfcIndexedPolygonalFace" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcIndexedPolygonalFaceWithVoids a owl:Class ;
+    rdfs:label "IfcIndexedPolygonalFaceWithVoids" .
+
+ifc:IfcIndexedPolygonalTextureMap a owl:Class ;
+    rdfs:label "IfcIndexedPolygonalTextureMap" .
+
+ifc:IfcIndexedTextureMap a owl:Class ;
+    rdfs:label "IfcIndexedTextureMap" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcIndexedTriangleTextureMap a owl:Class ;
+    rdfs:label "IfcIndexedTriangleTextureMap" .
+
+ifc:IfcInterceptor a owl:Class ;
+    rdfs:label "IfcInterceptor" .
+
+ifc:IfcInterceptorType a owl:Class ;
+    rdfs:label "IfcInterceptorType" .
+
+ifc:IfcIntersectionCurve a owl:Class ;
+    rdfs:label "IfcIntersectionCurve" .
+
+ifc:IfcInventory a owl:Class ;
+    rdfs:label "IfcInventory" .
+
+ifc:IfcIrregularTimeSeries a owl:Class ;
+    rdfs:label "IfcIrregularTimeSeries" .
+
+ifc:IfcIrregularTimeSeriesValue a owl:Class ;
+    rdfs:label "IfcIrregularTimeSeriesValue" .
+
+ifc:IfcJunctionBox a owl:Class ;
+    rdfs:label "IfcJunctionBox" .
+
+ifc:IfcJunctionBoxType a owl:Class ;
+    rdfs:label "IfcJunctionBoxType" .
+
+ifc:IfcKerb a owl:Class ;
+    rdfs:label "IfcKerb" .
+
+ifc:IfcKerbType a owl:Class ;
+    rdfs:label "IfcKerbType" .
+
+ifc:IfcLShapeProfileDef a owl:Class ;
+    rdfs:label "IfcLShapeProfileDef" .
+
+ifc:IfcLaborResource a owl:Class ;
+    rdfs:label "IfcLaborResource" .
+
+ifc:IfcLaborResourceType a owl:Class ;
+    rdfs:label "IfcLaborResourceType" .
+
+ifc:IfcLagTime a owl:Class ;
+    rdfs:label "IfcLagTime" .
+
+ifc:IfcLamp a owl:Class ;
+    rdfs:label "IfcLamp" .
+
+ifc:IfcLampType a owl:Class ;
+    rdfs:label "IfcLampType" .
+
+ifc:IfcLibraryInformation a owl:Class ;
+    rdfs:label "IfcLibraryInformation" .
+
+ifc:IfcLibraryReference a owl:Class ;
+    rdfs:label "IfcLibraryReference" .
+
+ifc:IfcLightDistributionData a owl:Class ;
+    rdfs:label "IfcLightDistributionData" .
+
+ifc:IfcLightFixture a owl:Class ;
+    rdfs:label "IfcLightFixture" .
+
+ifc:IfcLightFixtureType a owl:Class ;
+    rdfs:label "IfcLightFixtureType" .
+
+ifc:IfcLightIntensityDistribution a owl:Class ;
+    rdfs:label "IfcLightIntensityDistribution" .
+
+ifc:IfcLightSource a owl:Class ;
+    rdfs:label "IfcLightSource" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcLightSourceAmbient a owl:Class ;
+    rdfs:label "IfcLightSourceAmbient" .
+
+ifc:IfcLightSourceDirectional a owl:Class ;
+    rdfs:label "IfcLightSourceDirectional" .
+
+ifc:IfcLightSourceGoniometric a owl:Class ;
+    rdfs:label "IfcLightSourceGoniometric" .
+
+ifc:IfcLightSourcePositional a owl:Class ;
+    rdfs:label "IfcLightSourcePositional" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcLightSourceSpot a owl:Class ;
+    rdfs:label "IfcLightSourceSpot" .
+
+ifc:IfcLine a owl:Class ;
+    rdfs:label "IfcLine" .
+
+ifc:IfcLinearElement a owl:Class ;
+    rdfs:label "IfcLinearElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcLinearPlacement a owl:Class ;
+    rdfs:label "IfcLinearPlacement" .
+
+ifc:IfcLinearPositioningElement a owl:Class ;
+    rdfs:label "IfcLinearPositioningElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcLiquidTerminal a owl:Class ;
+    rdfs:label "IfcLiquidTerminal" .
+
+ifc:IfcLiquidTerminalType a owl:Class ;
+    rdfs:label "IfcLiquidTerminalType" .
+
+ifc:IfcLocalPlacement a owl:Class ;
+    rdfs:label "IfcLocalPlacement" .
+
+ifc:IfcLoop a owl:Class ;
+    rdfs:label "IfcLoop" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcManifoldSolidBrep a owl:Class ;
+    rdfs:label "IfcManifoldSolidBrep" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcMapConversion a owl:Class ;
+    rdfs:label "IfcMapConversion" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcMapConversionScaled a owl:Class ;
+    rdfs:label "IfcMapConversionScaled" .
+
+ifc:IfcMappedItem a owl:Class ;
+    rdfs:label "IfcMappedItem" .
+
+ifc:IfcMarineFacility a owl:Class ;
+    rdfs:label "IfcMarineFacility" .
+
+ifc:IfcMarinePart a owl:Class ;
+    rdfs:label "IfcMarinePart" .
+
+ifc:IfcMaterial a owl:Class ;
+    rdfs:label "IfcMaterial" .
+
+ifc:IfcMaterialClassificationRelationship a owl:Class ;
+    rdfs:label "IfcMaterialClassificationRelationship" .
+
+ifc:IfcMaterialConstituent a owl:Class ;
+    rdfs:label "IfcMaterialConstituent" .
+
+ifc:IfcMaterialConstituentSet a owl:Class ;
+    rdfs:label "IfcMaterialConstituentSet" .
+
+ifc:IfcMaterialDefinition a owl:Class ;
+    rdfs:label "IfcMaterialDefinition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcMaterialDefinitionRepresentation a owl:Class ;
+    rdfs:label "IfcMaterialDefinitionRepresentation" .
+
+ifc:IfcMaterialLayer a owl:Class ;
+    rdfs:label "IfcMaterialLayer" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcMaterialLayerSet a owl:Class ;
+    rdfs:label "IfcMaterialLayerSet" .
+
+ifc:IfcMaterialLayerSetUsage a owl:Class ;
+    rdfs:label "IfcMaterialLayerSetUsage" .
+
+ifc:IfcMaterialLayerWithOffsets a owl:Class ;
+    rdfs:label "IfcMaterialLayerWithOffsets" .
+
+ifc:IfcMaterialList a owl:Class ;
+    rdfs:label "IfcMaterialList" .
+
+ifc:IfcMaterialProfile a owl:Class ;
+    rdfs:label "IfcMaterialProfile" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcMaterialProfileSet a owl:Class ;
+    rdfs:label "IfcMaterialProfileSet" .
+
+ifc:IfcMaterialProfileSetUsage a owl:Class ;
+    rdfs:label "IfcMaterialProfileSetUsage" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcMaterialProfileSetUsageTapering a owl:Class ;
+    rdfs:label "IfcMaterialProfileSetUsageTapering" .
+
+ifc:IfcMaterialProfileWithOffsets a owl:Class ;
+    rdfs:label "IfcMaterialProfileWithOffsets" .
+
+ifc:IfcMaterialProperties a owl:Class ;
+    rdfs:label "IfcMaterialProperties" .
+
+ifc:IfcMaterialRelationship a owl:Class ;
+    rdfs:label "IfcMaterialRelationship" .
+
+ifc:IfcMaterialUsageDefinition a owl:Class ;
+    rdfs:label "IfcMaterialUsageDefinition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcMeasureWithUnit a owl:Class ;
+    rdfs:label "IfcMeasureWithUnit" .
+
+ifc:IfcMechanicalFastener a owl:Class ;
+    rdfs:label "IfcMechanicalFastener" .
+
+ifc:IfcMechanicalFastenerType a owl:Class ;
+    rdfs:label "IfcMechanicalFastenerType" .
+
+ifc:IfcMedicalDevice a owl:Class ;
+    rdfs:label "IfcMedicalDevice" .
+
+ifc:IfcMedicalDeviceType a owl:Class ;
+    rdfs:label "IfcMedicalDeviceType" .
+
+ifc:IfcMember a owl:Class ;
+    rdfs:label "IfcMember" .
+
+ifc:IfcMemberType a owl:Class ;
+    rdfs:label "IfcMemberType" .
+
+ifc:IfcMetric a owl:Class ;
+    rdfs:label "IfcMetric" .
+
+ifc:IfcMirroredProfileDef a owl:Class ;
+    rdfs:label "IfcMirroredProfileDef" .
+
+ifc:IfcMobileTelecommunicationsAppliance a owl:Class ;
+    rdfs:label "IfcMobileTelecommunicationsAppliance" .
+
+ifc:IfcMobileTelecommunicationsApplianceType a owl:Class ;
+    rdfs:label "IfcMobileTelecommunicationsApplianceType" .
+
+ifc:IfcMonetaryUnit a owl:Class ;
+    rdfs:label "IfcMonetaryUnit" .
+
+ifc:IfcMooringDevice a owl:Class ;
+    rdfs:label "IfcMooringDevice" .
+
+ifc:IfcMooringDeviceType a owl:Class ;
+    rdfs:label "IfcMooringDeviceType" .
+
+ifc:IfcMotorConnection a owl:Class ;
+    rdfs:label "IfcMotorConnection" .
+
+ifc:IfcMotorConnectionType a owl:Class ;
+    rdfs:label "IfcMotorConnectionType" .
+
+ifc:IfcNamedUnit a owl:Class ;
+    rdfs:label "IfcNamedUnit" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcNavigationElement a owl:Class ;
+    rdfs:label "IfcNavigationElement" .
+
+ifc:IfcNavigationElementType a owl:Class ;
+    rdfs:label "IfcNavigationElementType" .
+
+ifc:IfcObject a owl:Class ;
+    rdfs:label "IfcObject" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcObjectDefinition a owl:Class ;
+    rdfs:label "IfcObjectDefinition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcObjectPlacement a owl:Class ;
+    rdfs:label "IfcObjectPlacement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcObjective a owl:Class ;
+    rdfs:label "IfcObjective" .
+
+ifc:IfcOccupant a owl:Class ;
+    rdfs:label "IfcOccupant" .
+
+ifc:IfcOffsetCurve a owl:Class ;
+    rdfs:label "IfcOffsetCurve" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcOffsetCurve2D a owl:Class ;
+    rdfs:label "IfcOffsetCurve2D" .
+
+ifc:IfcOffsetCurve3D a owl:Class ;
+    rdfs:label "IfcOffsetCurve3D" .
+
+ifc:IfcOffsetCurveByDistances a owl:Class ;
+    rdfs:label "IfcOffsetCurveByDistances" .
+
+ifc:IfcOpenCrossProfileDef a owl:Class ;
+    rdfs:label "IfcOpenCrossProfileDef" .
+
+ifc:IfcOpenShell a owl:Class ;
+    rdfs:label "IfcOpenShell" .
+
+ifc:IfcOpeningElement a owl:Class ;
+    rdfs:label "IfcOpeningElement" .
+
+ifc:IfcOrganization a owl:Class ;
+    rdfs:label "IfcOrganization" .
+
+ifc:IfcOrganizationRelationship a owl:Class ;
+    rdfs:label "IfcOrganizationRelationship" .
+
+ifc:IfcOrientedEdge a owl:Class ;
+    rdfs:label "IfcOrientedEdge" .
+
+ifc:IfcOuterBoundaryCurve a owl:Class ;
+    rdfs:label "IfcOuterBoundaryCurve" .
+
+ifc:IfcOutlet a owl:Class ;
+    rdfs:label "IfcOutlet" .
+
+ifc:IfcOutletType a owl:Class ;
+    rdfs:label "IfcOutletType" .
+
+ifc:IfcOwnerHistory a owl:Class ;
+    rdfs:label "IfcOwnerHistory" .
+
+ifc:IfcParameterizedProfileDef a owl:Class ;
+    rdfs:label "IfcParameterizedProfileDef" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPath a owl:Class ;
+    rdfs:label "IfcPath" .
+
+ifc:IfcPavement a owl:Class ;
+    rdfs:label "IfcPavement" .
+
+ifc:IfcPavementType a owl:Class ;
+    rdfs:label "IfcPavementType" .
+
+ifc:IfcPcurve a owl:Class ;
+    rdfs:label "IfcPcurve" .
+
+ifc:IfcPerformanceHistory a owl:Class ;
+    rdfs:label "IfcPerformanceHistory" .
+
+ifc:IfcPermeableCoveringProperties a owl:Class ;
+    rdfs:label "IfcPermeableCoveringProperties" .
+
+ifc:IfcPermit a owl:Class ;
+    rdfs:label "IfcPermit" .
+
+ifc:IfcPerson a owl:Class ;
+    rdfs:label "IfcPerson" .
+
+ifc:IfcPersonAndOrganization a owl:Class ;
+    rdfs:label "IfcPersonAndOrganization" .
+
+ifc:IfcPhysicalComplexQuantity a owl:Class ;
+    rdfs:label "IfcPhysicalComplexQuantity" .
+
+ifc:IfcPhysicalQuantity a owl:Class ;
+    rdfs:label "IfcPhysicalQuantity" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPhysicalSimpleQuantity a owl:Class ;
+    rdfs:label "IfcPhysicalSimpleQuantity" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPile a owl:Class ;
+    rdfs:label "IfcPile" .
+
+ifc:IfcPileType a owl:Class ;
+    rdfs:label "IfcPileType" .
+
+ifc:IfcPipeFitting a owl:Class ;
+    rdfs:label "IfcPipeFitting" .
+
+ifc:IfcPipeFittingType a owl:Class ;
+    rdfs:label "IfcPipeFittingType" .
+
+ifc:IfcPipeSegment a owl:Class ;
+    rdfs:label "IfcPipeSegment" .
+
+ifc:IfcPipeSegmentType a owl:Class ;
+    rdfs:label "IfcPipeSegmentType" .
+
+ifc:IfcPixelTexture a owl:Class ;
+    rdfs:label "IfcPixelTexture" .
+
+ifc:IfcPlacement a owl:Class ;
+    rdfs:label "IfcPlacement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPlanarBox a owl:Class ;
+    rdfs:label "IfcPlanarBox" .
+
+ifc:IfcPlanarExtent a owl:Class ;
+    rdfs:label "IfcPlanarExtent" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPlane a owl:Class ;
+    rdfs:label "IfcPlane" .
+
+ifc:IfcPlate a owl:Class ;
+    rdfs:label "IfcPlate" .
+
+ifc:IfcPlateType a owl:Class ;
+    rdfs:label "IfcPlateType" .
+
+ifc:IfcPoint a owl:Class ;
+    rdfs:label "IfcPoint" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPointByDistanceExpression a owl:Class ;
+    rdfs:label "IfcPointByDistanceExpression" .
+
+ifc:IfcPointOnCurve a owl:Class ;
+    rdfs:label "IfcPointOnCurve" .
+
+ifc:IfcPointOnSurface a owl:Class ;
+    rdfs:label "IfcPointOnSurface" .
+
+ifc:IfcPolyLoop a owl:Class ;
+    rdfs:label "IfcPolyLoop" .
+
+ifc:IfcPolygonalBoundedHalfSpace a owl:Class ;
+    rdfs:label "IfcPolygonalBoundedHalfSpace" .
+
+ifc:IfcPolygonalFaceSet a owl:Class ;
+    rdfs:label "IfcPolygonalFaceSet" .
+
+ifc:IfcPolyline a owl:Class ;
+    rdfs:label "IfcPolyline" .
+
+ifc:IfcPolynomialCurve a owl:Class ;
+    rdfs:label "IfcPolynomialCurve" .
+
+ifc:IfcPort a owl:Class ;
+    rdfs:label "IfcPort" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPositioningElement a owl:Class ;
+    rdfs:label "IfcPositioningElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPostalAddress a owl:Class ;
+    rdfs:label "IfcPostalAddress" .
+
+ifc:IfcPreDefinedColour a owl:Class ;
+    rdfs:label "IfcPreDefinedColour" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPreDefinedCurveFont a owl:Class ;
+    rdfs:label "IfcPreDefinedCurveFont" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPreDefinedItem a owl:Class ;
+    rdfs:label "IfcPreDefinedItem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPreDefinedProperties a owl:Class ;
+    rdfs:label "IfcPreDefinedProperties" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPreDefinedPropertySet a owl:Class ;
+    rdfs:label "IfcPreDefinedPropertySet" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPreDefinedTextFont a owl:Class ;
+    rdfs:label "IfcPreDefinedTextFont" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPresentationItem a owl:Class ;
+    rdfs:label "IfcPresentationItem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPresentationLayerAssignment a owl:Class ;
+    rdfs:label "IfcPresentationLayerAssignment" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPresentationLayerWithStyle a owl:Class ;
+    rdfs:label "IfcPresentationLayerWithStyle" .
+
+ifc:IfcPresentationStyle a owl:Class ;
+    rdfs:label "IfcPresentationStyle" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcProcedure a owl:Class ;
+    rdfs:label "IfcProcedure" .
+
+ifc:IfcProcedureType a owl:Class ;
+    rdfs:label "IfcProcedureType" .
+
+ifc:IfcProcess a owl:Class ;
+    rdfs:label "IfcProcess" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcProduct a owl:Class ;
+    rdfs:label "IfcProduct" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcProductDefinitionShape a owl:Class ;
+    rdfs:label "IfcProductDefinitionShape" .
+
+ifc:IfcProductRepresentation a owl:Class ;
+    rdfs:label "IfcProductRepresentation" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcProfileDef a owl:Class ;
+    rdfs:label "IfcProfileDef" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcProfileProperties a owl:Class ;
+    rdfs:label "IfcProfileProperties" .
+
+ifc:IfcProject a owl:Class ;
+    rdfs:label "IfcProject" .
+
+ifc:IfcProjectLibrary a owl:Class ;
+    rdfs:label "IfcProjectLibrary" .
+
+ifc:IfcProjectOrder a owl:Class ;
+    rdfs:label "IfcProjectOrder" .
+
+ifc:IfcProjectedCRS a owl:Class ;
+    rdfs:label "IfcProjectedCRS" .
+
+ifc:IfcProjectionElement a owl:Class ;
+    rdfs:label "IfcProjectionElement" .
+
+ifc:IfcProperty a owl:Class ;
+    rdfs:label "IfcProperty" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPropertyAbstraction a owl:Class ;
+    rdfs:label "IfcPropertyAbstraction" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPropertyBoundedValue a owl:Class ;
+    rdfs:label "IfcPropertyBoundedValue" .
+
+ifc:IfcPropertyDefinition a owl:Class ;
+    rdfs:label "IfcPropertyDefinition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPropertyDependencyRelationship a owl:Class ;
+    rdfs:label "IfcPropertyDependencyRelationship" .
+
+ifc:IfcPropertyEnumeratedValue a owl:Class ;
+    rdfs:label "IfcPropertyEnumeratedValue" .
+
+ifc:IfcPropertyEnumeration a owl:Class ;
+    rdfs:label "IfcPropertyEnumeration" .
+
+ifc:IfcPropertyListValue a owl:Class ;
+    rdfs:label "IfcPropertyListValue" .
+
+ifc:IfcPropertyReferenceValue a owl:Class ;
+    rdfs:label "IfcPropertyReferenceValue" .
+
+ifc:IfcPropertySet a owl:Class ;
+    rdfs:label "IfcPropertySet" .
+
+ifc:IfcPropertySetDefinition a owl:Class ;
+    rdfs:label "IfcPropertySetDefinition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPropertySetTemplate a owl:Class ;
+    rdfs:label "IfcPropertySetTemplate" .
+
+ifc:IfcPropertySingleValue a owl:Class ;
+    rdfs:label "IfcPropertySingleValue" .
+
+ifc:IfcPropertyTableValue a owl:Class ;
+    rdfs:label "IfcPropertyTableValue" .
+
+ifc:IfcPropertyTemplate a owl:Class ;
+    rdfs:label "IfcPropertyTemplate" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcPropertyTemplateDefinition a owl:Class ;
+    rdfs:label "IfcPropertyTemplateDefinition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcProtectiveDevice a owl:Class ;
+    rdfs:label "IfcProtectiveDevice" .
+
+ifc:IfcProtectiveDeviceTrippingUnit a owl:Class ;
+    rdfs:label "IfcProtectiveDeviceTrippingUnit" .
+
+ifc:IfcProtectiveDeviceTrippingUnitType a owl:Class ;
+    rdfs:label "IfcProtectiveDeviceTrippingUnitType" .
+
+ifc:IfcProtectiveDeviceType a owl:Class ;
+    rdfs:label "IfcProtectiveDeviceType" .
+
+ifc:IfcPump a owl:Class ;
+    rdfs:label "IfcPump" .
+
+ifc:IfcPumpType a owl:Class ;
+    rdfs:label "IfcPumpType" .
+
+ifc:IfcQuantityArea a owl:Class ;
+    rdfs:label "IfcQuantityArea" .
+
+ifc:IfcQuantityCount a owl:Class ;
+    rdfs:label "IfcQuantityCount" .
+
+ifc:IfcQuantityLength a owl:Class ;
+    rdfs:label "IfcQuantityLength" .
+
+ifc:IfcQuantityNumber a owl:Class ;
+    rdfs:label "IfcQuantityNumber" .
+
+ifc:IfcQuantitySet a owl:Class ;
+    rdfs:label "IfcQuantitySet" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcQuantityTime a owl:Class ;
+    rdfs:label "IfcQuantityTime" .
+
+ifc:IfcQuantityVolume a owl:Class ;
+    rdfs:label "IfcQuantityVolume" .
+
+ifc:IfcQuantityWeight a owl:Class ;
+    rdfs:label "IfcQuantityWeight" .
+
+ifc:IfcRail a owl:Class ;
+    rdfs:label "IfcRail" .
+
+ifc:IfcRailType a owl:Class ;
+    rdfs:label "IfcRailType" .
+
+ifc:IfcRailing a owl:Class ;
+    rdfs:label "IfcRailing" .
+
+ifc:IfcRailingType a owl:Class ;
+    rdfs:label "IfcRailingType" .
+
+ifc:IfcRailway a owl:Class ;
+    rdfs:label "IfcRailway" .
+
+ifc:IfcRailwayPart a owl:Class ;
+    rdfs:label "IfcRailwayPart" .
+
+ifc:IfcRamp a owl:Class ;
+    rdfs:label "IfcRamp" .
+
+ifc:IfcRampFlight a owl:Class ;
+    rdfs:label "IfcRampFlight" .
+
+ifc:IfcRampFlightType a owl:Class ;
+    rdfs:label "IfcRampFlightType" .
+
+ifc:IfcRampType a owl:Class ;
+    rdfs:label "IfcRampType" .
+
+ifc:IfcRationalBSplineCurveWithKnots a owl:Class ;
+    rdfs:label "IfcRationalBSplineCurveWithKnots" .
+
+ifc:IfcRationalBSplineSurfaceWithKnots a owl:Class ;
+    rdfs:label "IfcRationalBSplineSurfaceWithKnots" .
+
+ifc:IfcRectangleHollowProfileDef a owl:Class ;
+    rdfs:label "IfcRectangleHollowProfileDef" .
+
+ifc:IfcRectangleProfileDef a owl:Class ;
+    rdfs:label "IfcRectangleProfileDef" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRectangularPyramid a owl:Class ;
+    rdfs:label "IfcRectangularPyramid" .
+
+ifc:IfcRectangularTrimmedSurface a owl:Class ;
+    rdfs:label "IfcRectangularTrimmedSurface" .
+
+ifc:IfcRecurrencePattern a owl:Class ;
+    rdfs:label "IfcRecurrencePattern" .
+
+ifc:IfcReference a owl:Class ;
+    rdfs:label "IfcReference" .
+
+ifc:IfcReferent a owl:Class ;
+    rdfs:label "IfcReferent" .
+
+ifc:IfcRegularTimeSeries a owl:Class ;
+    rdfs:label "IfcRegularTimeSeries" .
+
+ifc:IfcReinforcedSoil a owl:Class ;
+    rdfs:label "IfcReinforcedSoil" .
+
+ifc:IfcReinforcementBarProperties a owl:Class ;
+    rdfs:label "IfcReinforcementBarProperties" .
+
+ifc:IfcReinforcementDefinitionProperties a owl:Class ;
+    rdfs:label "IfcReinforcementDefinitionProperties" .
+
+ifc:IfcReinforcingBar a owl:Class ;
+    rdfs:label "IfcReinforcingBar" .
+
+ifc:IfcReinforcingBarType a owl:Class ;
+    rdfs:label "IfcReinforcingBarType" .
+
+ifc:IfcReinforcingElement a owl:Class ;
+    rdfs:label "IfcReinforcingElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcReinforcingElementType a owl:Class ;
+    rdfs:label "IfcReinforcingElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcReinforcingMesh a owl:Class ;
+    rdfs:label "IfcReinforcingMesh" .
+
+ifc:IfcReinforcingMeshType a owl:Class ;
+    rdfs:label "IfcReinforcingMeshType" .
+
+ifc:IfcRelAdheresToElement a owl:Class ;
+    rdfs:label "IfcRelAdheresToElement" .
+
+ifc:IfcRelAggregates a owl:Class ;
+    rdfs:label "IfcRelAggregates" .
+
+ifc:IfcRelAssigns a owl:Class ;
+    rdfs:label "IfcRelAssigns" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelAssignsToActor a owl:Class ;
+    rdfs:label "IfcRelAssignsToActor" .
+
+ifc:IfcRelAssignsToControl a owl:Class ;
+    rdfs:label "IfcRelAssignsToControl" .
+
+ifc:IfcRelAssignsToGroup a owl:Class ;
+    rdfs:label "IfcRelAssignsToGroup" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelAssignsToGroupByFactor a owl:Class ;
+    rdfs:label "IfcRelAssignsToGroupByFactor" .
+
+ifc:IfcRelAssignsToProcess a owl:Class ;
+    rdfs:label "IfcRelAssignsToProcess" .
+
+ifc:IfcRelAssignsToProduct a owl:Class ;
+    rdfs:label "IfcRelAssignsToProduct" .
+
+ifc:IfcRelAssignsToResource a owl:Class ;
+    rdfs:label "IfcRelAssignsToResource" .
+
+ifc:IfcRelAssociates a owl:Class ;
+    rdfs:label "IfcRelAssociates" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelAssociatesApproval a owl:Class ;
+    rdfs:label "IfcRelAssociatesApproval" .
+
+ifc:IfcRelAssociatesClassification a owl:Class ;
+    rdfs:label "IfcRelAssociatesClassification" .
+
+ifc:IfcRelAssociatesConstraint a owl:Class ;
+    rdfs:label "IfcRelAssociatesConstraint" .
+
+ifc:IfcRelAssociatesDocument a owl:Class ;
+    rdfs:label "IfcRelAssociatesDocument" .
+
+ifc:IfcRelAssociatesLibrary a owl:Class ;
+    rdfs:label "IfcRelAssociatesLibrary" .
+
+ifc:IfcRelAssociatesMaterial a owl:Class ;
+    rdfs:label "IfcRelAssociatesMaterial" .
+
+ifc:IfcRelAssociatesProfileDef a owl:Class ;
+    rdfs:label "IfcRelAssociatesProfileDef" .
+
+ifc:IfcRelConnects a owl:Class ;
+    rdfs:label "IfcRelConnects" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelConnectsElements a owl:Class ;
+    rdfs:label "IfcRelConnectsElements" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelConnectsPathElements a owl:Class ;
+    rdfs:label "IfcRelConnectsPathElements" .
+
+ifc:IfcRelConnectsPortToElement a owl:Class ;
+    rdfs:label "IfcRelConnectsPortToElement" .
+
+ifc:IfcRelConnectsPorts a owl:Class ;
+    rdfs:label "IfcRelConnectsPorts" .
+
+ifc:IfcRelConnectsStructuralActivity a owl:Class ;
+    rdfs:label "IfcRelConnectsStructuralActivity" .
+
+ifc:IfcRelConnectsStructuralMember a owl:Class ;
+    rdfs:label "IfcRelConnectsStructuralMember" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelConnectsWithEccentricity a owl:Class ;
+    rdfs:label "IfcRelConnectsWithEccentricity" .
+
+ifc:IfcRelConnectsWithRealizingElements a owl:Class ;
+    rdfs:label "IfcRelConnectsWithRealizingElements" .
+
+ifc:IfcRelContainedInSpatialStructure a owl:Class ;
+    rdfs:label "IfcRelContainedInSpatialStructure" .
+
+ifc:IfcRelCoversBldgElements a owl:Class ;
+    rdfs:label "IfcRelCoversBldgElements" .
+
+ifc:IfcRelCoversSpaces a owl:Class ;
+    rdfs:label "IfcRelCoversSpaces" .
+
+ifc:IfcRelDeclares a owl:Class ;
+    rdfs:label "IfcRelDeclares" .
+
+ifc:IfcRelDecomposes a owl:Class ;
+    rdfs:label "IfcRelDecomposes" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelDefines a owl:Class ;
+    rdfs:label "IfcRelDefines" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelDefinesByObject a owl:Class ;
+    rdfs:label "IfcRelDefinesByObject" .
+
+ifc:IfcRelDefinesByProperties a owl:Class ;
+    rdfs:label "IfcRelDefinesByProperties" .
+
+ifc:IfcRelDefinesByTemplate a owl:Class ;
+    rdfs:label "IfcRelDefinesByTemplate" .
+
+ifc:IfcRelDefinesByType a owl:Class ;
+    rdfs:label "IfcRelDefinesByType" .
+
+ifc:IfcRelFillsElement a owl:Class ;
+    rdfs:label "IfcRelFillsElement" .
+
+ifc:IfcRelFlowControlElements a owl:Class ;
+    rdfs:label "IfcRelFlowControlElements" .
+
+ifc:IfcRelInterferesElements a owl:Class ;
+    rdfs:label "IfcRelInterferesElements" .
+
+ifc:IfcRelNests a owl:Class ;
+    rdfs:label "IfcRelNests" .
+
+ifc:IfcRelPositions a owl:Class ;
+    rdfs:label "IfcRelPositions" .
+
+ifc:IfcRelProjectsElement a owl:Class ;
+    rdfs:label "IfcRelProjectsElement" .
+
+ifc:IfcRelReferencedInSpatialStructure a owl:Class ;
+    rdfs:label "IfcRelReferencedInSpatialStructure" .
+
+ifc:IfcRelSequence a owl:Class ;
+    rdfs:label "IfcRelSequence" .
+
+ifc:IfcRelServicesBuildings a owl:Class ;
+    rdfs:label "IfcRelServicesBuildings" .
+
+ifc:IfcRelSpaceBoundary a owl:Class ;
+    rdfs:label "IfcRelSpaceBoundary" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelSpaceBoundary1stLevel a owl:Class ;
+    rdfs:label "IfcRelSpaceBoundary1stLevel" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRelSpaceBoundary2ndLevel a owl:Class ;
+    rdfs:label "IfcRelSpaceBoundary2ndLevel" .
+
+ifc:IfcRelVoidsElement a owl:Class ;
+    rdfs:label "IfcRelVoidsElement" .
+
+ifc:IfcRelationship a owl:Class ;
+    rdfs:label "IfcRelationship" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcReparametrisedCompositeCurveSegment a owl:Class ;
+    rdfs:label "IfcReparametrisedCompositeCurveSegment" .
+
+ifc:IfcRepresentation a owl:Class ;
+    rdfs:label "IfcRepresentation" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRepresentationContext a owl:Class ;
+    rdfs:label "IfcRepresentationContext" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRepresentationItem a owl:Class ;
+    rdfs:label "IfcRepresentationItem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRepresentationMap a owl:Class ;
+    rdfs:label "IfcRepresentationMap" .
+
+ifc:IfcResource a owl:Class ;
+    rdfs:label "IfcResource" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcResourceApprovalRelationship a owl:Class ;
+    rdfs:label "IfcResourceApprovalRelationship" .
+
+ifc:IfcResourceConstraintRelationship a owl:Class ;
+    rdfs:label "IfcResourceConstraintRelationship" .
+
+ifc:IfcResourceLevelRelationship a owl:Class ;
+    rdfs:label "IfcResourceLevelRelationship" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcResourceTime a owl:Class ;
+    rdfs:label "IfcResourceTime" .
+
+ifc:IfcRevolvedAreaSolid a owl:Class ;
+    rdfs:label "IfcRevolvedAreaSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRevolvedAreaSolidTapered a owl:Class ;
+    rdfs:label "IfcRevolvedAreaSolidTapered" .
+
+ifc:IfcRightCircularCone a owl:Class ;
+    rdfs:label "IfcRightCircularCone" .
+
+ifc:IfcRightCircularCylinder a owl:Class ;
+    rdfs:label "IfcRightCircularCylinder" .
+
+ifc:IfcRigidOperation a owl:Class ;
+    rdfs:label "IfcRigidOperation" .
+
+ifc:IfcRoad a owl:Class ;
+    rdfs:label "IfcRoad" .
+
+ifc:IfcRoadPart a owl:Class ;
+    rdfs:label "IfcRoadPart" .
+
+ifc:IfcRoof a owl:Class ;
+    rdfs:label "IfcRoof" .
+
+ifc:IfcRoofType a owl:Class ;
+    rdfs:label "IfcRoofType" .
+
+ifc:IfcRoot a owl:Class ;
+    rdfs:label "IfcRoot" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcRoundedRectangleProfileDef a owl:Class ;
+    rdfs:label "IfcRoundedRectangleProfileDef" .
+
+ifc:IfcSIUnit a owl:Class ;
+    rdfs:label "IfcSIUnit" .
+
+ifc:IfcSanitaryTerminal a owl:Class ;
+    rdfs:label "IfcSanitaryTerminal" .
+
+ifc:IfcSanitaryTerminalType a owl:Class ;
+    rdfs:label "IfcSanitaryTerminalType" .
+
+ifc:IfcSchedulingTime a owl:Class ;
+    rdfs:label "IfcSchedulingTime" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSeamCurve a owl:Class ;
+    rdfs:label "IfcSeamCurve" .
+
+ifc:IfcSecondOrderPolynomialSpiral a owl:Class ;
+    rdfs:label "IfcSecondOrderPolynomialSpiral" .
+
+ifc:IfcSectionProperties a owl:Class ;
+    rdfs:label "IfcSectionProperties" .
+
+ifc:IfcSectionReinforcementProperties a owl:Class ;
+    rdfs:label "IfcSectionReinforcementProperties" .
+
+ifc:IfcSectionedSolid a owl:Class ;
+    rdfs:label "IfcSectionedSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSectionedSolidHorizontal a owl:Class ;
+    rdfs:label "IfcSectionedSolidHorizontal" .
+
+ifc:IfcSectionedSpine a owl:Class ;
+    rdfs:label "IfcSectionedSpine" .
+
+ifc:IfcSectionedSurface a owl:Class ;
+    rdfs:label "IfcSectionedSurface" .
+
+ifc:IfcSegment a owl:Class ;
+    rdfs:label "IfcSegment" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSegmentedReferenceCurve a owl:Class ;
+    rdfs:label "IfcSegmentedReferenceCurve" .
+
+ifc:IfcSensor a owl:Class ;
+    rdfs:label "IfcSensor" .
+
+ifc:IfcSensorType a owl:Class ;
+    rdfs:label "IfcSensorType" .
+
+ifc:IfcSeventhOrderPolynomialSpiral a owl:Class ;
+    rdfs:label "IfcSeventhOrderPolynomialSpiral" .
+
+ifc:IfcShadingDevice a owl:Class ;
+    rdfs:label "IfcShadingDevice" .
+
+ifc:IfcShadingDeviceType a owl:Class ;
+    rdfs:label "IfcShadingDeviceType" .
+
+ifc:IfcShapeAspect a owl:Class ;
+    rdfs:label "IfcShapeAspect" .
+
+ifc:IfcShapeModel a owl:Class ;
+    rdfs:label "IfcShapeModel" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcShapeRepresentation a owl:Class ;
+    rdfs:label "IfcShapeRepresentation" .
+
+ifc:IfcShellBasedSurfaceModel a owl:Class ;
+    rdfs:label "IfcShellBasedSurfaceModel" .
+
+ifc:IfcSign a owl:Class ;
+    rdfs:label "IfcSign" .
+
+ifc:IfcSignType a owl:Class ;
+    rdfs:label "IfcSignType" .
+
+ifc:IfcSignal a owl:Class ;
+    rdfs:label "IfcSignal" .
+
+ifc:IfcSignalType a owl:Class ;
+    rdfs:label "IfcSignalType" .
+
+ifc:IfcSimpleProperty a owl:Class ;
+    rdfs:label "IfcSimpleProperty" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSimplePropertyTemplate a owl:Class ;
+    rdfs:label "IfcSimplePropertyTemplate" .
+
+ifc:IfcSineSpiral a owl:Class ;
+    rdfs:label "IfcSineSpiral" .
+
+ifc:IfcSite a owl:Class ;
+    rdfs:label "IfcSite" .
+
+ifc:IfcSlab a owl:Class ;
+    rdfs:label "IfcSlab" .
+
+ifc:IfcSlabType a owl:Class ;
+    rdfs:label "IfcSlabType" .
+
+ifc:IfcSlippageConnectionCondition a owl:Class ;
+    rdfs:label "IfcSlippageConnectionCondition" .
+
+ifc:IfcSolarDevice a owl:Class ;
+    rdfs:label "IfcSolarDevice" .
+
+ifc:IfcSolarDeviceType a owl:Class ;
+    rdfs:label "IfcSolarDeviceType" .
+
+ifc:IfcSolidModel a owl:Class ;
+    rdfs:label "IfcSolidModel" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSpace a owl:Class ;
+    rdfs:label "IfcSpace" .
+
+ifc:IfcSpaceHeater a owl:Class ;
+    rdfs:label "IfcSpaceHeater" .
+
+ifc:IfcSpaceHeaterType a owl:Class ;
+    rdfs:label "IfcSpaceHeaterType" .
+
+ifc:IfcSpaceType a owl:Class ;
+    rdfs:label "IfcSpaceType" .
+
+ifc:IfcSpatialElement a owl:Class ;
+    rdfs:label "IfcSpatialElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSpatialElementType a owl:Class ;
+    rdfs:label "IfcSpatialElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSpatialStructureElement a owl:Class ;
+    rdfs:label "IfcSpatialStructureElement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSpatialStructureElementType a owl:Class ;
+    rdfs:label "IfcSpatialStructureElementType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSpatialZone a owl:Class ;
+    rdfs:label "IfcSpatialZone" .
+
+ifc:IfcSpatialZoneType a owl:Class ;
+    rdfs:label "IfcSpatialZoneType" .
+
+ifc:IfcSphere a owl:Class ;
+    rdfs:label "IfcSphere" .
+
+ifc:IfcSphericalSurface a owl:Class ;
+    rdfs:label "IfcSphericalSurface" .
+
+ifc:IfcSpiral a owl:Class ;
+    rdfs:label "IfcSpiral" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStackTerminal a owl:Class ;
+    rdfs:label "IfcStackTerminal" .
+
+ifc:IfcStackTerminalType a owl:Class ;
+    rdfs:label "IfcStackTerminalType" .
+
+ifc:IfcStair a owl:Class ;
+    rdfs:label "IfcStair" .
+
+ifc:IfcStairFlight a owl:Class ;
+    rdfs:label "IfcStairFlight" .
+
+ifc:IfcStairFlightType a owl:Class ;
+    rdfs:label "IfcStairFlightType" .
+
+ifc:IfcStairType a owl:Class ;
+    rdfs:label "IfcStairType" .
+
+ifc:IfcStructuralAction a owl:Class ;
+    rdfs:label "IfcStructuralAction" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralActivity a owl:Class ;
+    rdfs:label "IfcStructuralActivity" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralAnalysisModel a owl:Class ;
+    rdfs:label "IfcStructuralAnalysisModel" .
+
+ifc:IfcStructuralConnection a owl:Class ;
+    rdfs:label "IfcStructuralConnection" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralConnectionCondition a owl:Class ;
+    rdfs:label "IfcStructuralConnectionCondition" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralCurveAction a owl:Class ;
+    rdfs:label "IfcStructuralCurveAction" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralCurveConnection a owl:Class ;
+    rdfs:label "IfcStructuralCurveConnection" .
+
+ifc:IfcStructuralCurveMember a owl:Class ;
+    rdfs:label "IfcStructuralCurveMember" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralCurveMemberVarying a owl:Class ;
+    rdfs:label "IfcStructuralCurveMemberVarying" .
+
+ifc:IfcStructuralCurveReaction a owl:Class ;
+    rdfs:label "IfcStructuralCurveReaction" .
+
+ifc:IfcStructuralItem a owl:Class ;
+    rdfs:label "IfcStructuralItem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralLinearAction a owl:Class ;
+    rdfs:label "IfcStructuralLinearAction" .
+
+ifc:IfcStructuralLoad a owl:Class ;
+    rdfs:label "IfcStructuralLoad" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralLoadCase a owl:Class ;
+    rdfs:label "IfcStructuralLoadCase" .
+
+ifc:IfcStructuralLoadConfiguration a owl:Class ;
+    rdfs:label "IfcStructuralLoadConfiguration" .
+
+ifc:IfcStructuralLoadGroup a owl:Class ;
+    rdfs:label "IfcStructuralLoadGroup" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralLoadLinearForce a owl:Class ;
+    rdfs:label "IfcStructuralLoadLinearForce" .
+
+ifc:IfcStructuralLoadOrResult a owl:Class ;
+    rdfs:label "IfcStructuralLoadOrResult" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralLoadPlanarForce a owl:Class ;
+    rdfs:label "IfcStructuralLoadPlanarForce" .
+
+ifc:IfcStructuralLoadSingleDisplacement a owl:Class ;
+    rdfs:label "IfcStructuralLoadSingleDisplacement" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralLoadSingleDisplacementDistortion a owl:Class ;
+    rdfs:label "IfcStructuralLoadSingleDisplacementDistortion" .
+
+ifc:IfcStructuralLoadSingleForce a owl:Class ;
+    rdfs:label "IfcStructuralLoadSingleForce" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralLoadSingleForceWarping a owl:Class ;
+    rdfs:label "IfcStructuralLoadSingleForceWarping" .
+
+ifc:IfcStructuralLoadStatic a owl:Class ;
+    rdfs:label "IfcStructuralLoadStatic" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralLoadTemperature a owl:Class ;
+    rdfs:label "IfcStructuralLoadTemperature" .
+
+ifc:IfcStructuralMember a owl:Class ;
+    rdfs:label "IfcStructuralMember" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralPlanarAction a owl:Class ;
+    rdfs:label "IfcStructuralPlanarAction" .
+
+ifc:IfcStructuralPointAction a owl:Class ;
+    rdfs:label "IfcStructuralPointAction" .
+
+ifc:IfcStructuralPointConnection a owl:Class ;
+    rdfs:label "IfcStructuralPointConnection" .
+
+ifc:IfcStructuralPointReaction a owl:Class ;
+    rdfs:label "IfcStructuralPointReaction" .
+
+ifc:IfcStructuralReaction a owl:Class ;
+    rdfs:label "IfcStructuralReaction" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralResultGroup a owl:Class ;
+    rdfs:label "IfcStructuralResultGroup" .
+
+ifc:IfcStructuralSurfaceAction a owl:Class ;
+    rdfs:label "IfcStructuralSurfaceAction" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralSurfaceConnection a owl:Class ;
+    rdfs:label "IfcStructuralSurfaceConnection" .
+
+ifc:IfcStructuralSurfaceMember a owl:Class ;
+    rdfs:label "IfcStructuralSurfaceMember" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStructuralSurfaceMemberVarying a owl:Class ;
+    rdfs:label "IfcStructuralSurfaceMemberVarying" .
+
+ifc:IfcStructuralSurfaceReaction a owl:Class ;
+    rdfs:label "IfcStructuralSurfaceReaction" .
+
+ifc:IfcStyleModel a owl:Class ;
+    rdfs:label "IfcStyleModel" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcStyledItem a owl:Class ;
+    rdfs:label "IfcStyledItem" .
+
+ifc:IfcStyledRepresentation a owl:Class ;
+    rdfs:label "IfcStyledRepresentation" .
+
+ifc:IfcSubContractResource a owl:Class ;
+    rdfs:label "IfcSubContractResource" .
+
+ifc:IfcSubContractResourceType a owl:Class ;
+    rdfs:label "IfcSubContractResourceType" .
+
+ifc:IfcSubedge a owl:Class ;
+    rdfs:label "IfcSubedge" .
+
+ifc:IfcSurface a owl:Class ;
+    rdfs:label "IfcSurface" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSurfaceCurve a owl:Class ;
+    rdfs:label "IfcSurfaceCurve" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSurfaceCurveSweptAreaSolid a owl:Class ;
+    rdfs:label "IfcSurfaceCurveSweptAreaSolid" .
+
+ifc:IfcSurfaceFeature a owl:Class ;
+    rdfs:label "IfcSurfaceFeature" .
+
+ifc:IfcSurfaceOfLinearExtrusion a owl:Class ;
+    rdfs:label "IfcSurfaceOfLinearExtrusion" .
+
+ifc:IfcSurfaceOfRevolution a owl:Class ;
+    rdfs:label "IfcSurfaceOfRevolution" .
+
+ifc:IfcSurfaceReinforcementArea a owl:Class ;
+    rdfs:label "IfcSurfaceReinforcementArea" .
+
+ifc:IfcSurfaceStyle a owl:Class ;
+    rdfs:label "IfcSurfaceStyle" .
+
+ifc:IfcSurfaceStyleLighting a owl:Class ;
+    rdfs:label "IfcSurfaceStyleLighting" .
+
+ifc:IfcSurfaceStyleRefraction a owl:Class ;
+    rdfs:label "IfcSurfaceStyleRefraction" .
+
+ifc:IfcSurfaceStyleRendering a owl:Class ;
+    rdfs:label "IfcSurfaceStyleRendering" .
+
+ifc:IfcSurfaceStyleShading a owl:Class ;
+    rdfs:label "IfcSurfaceStyleShading" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSurfaceStyleWithTextures a owl:Class ;
+    rdfs:label "IfcSurfaceStyleWithTextures" .
+
+ifc:IfcSurfaceTexture a owl:Class ;
+    rdfs:label "IfcSurfaceTexture" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSweptAreaSolid a owl:Class ;
+    rdfs:label "IfcSweptAreaSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSweptDiskSolid a owl:Class ;
+    rdfs:label "IfcSweptDiskSolid" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSweptDiskSolidPolygonal a owl:Class ;
+    rdfs:label "IfcSweptDiskSolidPolygonal" .
+
+ifc:IfcSweptSurface a owl:Class ;
+    rdfs:label "IfcSweptSurface" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSwitchingDevice a owl:Class ;
+    rdfs:label "IfcSwitchingDevice" .
+
+ifc:IfcSwitchingDeviceType a owl:Class ;
+    rdfs:label "IfcSwitchingDeviceType" .
+
+ifc:IfcSystem a owl:Class ;
+    rdfs:label "IfcSystem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcSystemFurnitureElement a owl:Class ;
+    rdfs:label "IfcSystemFurnitureElement" .
+
+ifc:IfcSystemFurnitureElementType a owl:Class ;
+    rdfs:label "IfcSystemFurnitureElementType" .
+
+ifc:IfcTShapeProfileDef a owl:Class ;
+    rdfs:label "IfcTShapeProfileDef" .
+
+ifc:IfcTable a owl:Class ;
+    rdfs:label "IfcTable" .
+
+ifc:IfcTableColumn a owl:Class ;
+    rdfs:label "IfcTableColumn" .
+
+ifc:IfcTableRow a owl:Class ;
+    rdfs:label "IfcTableRow" .
+
+ifc:IfcTank a owl:Class ;
+    rdfs:label "IfcTank" .
+
+ifc:IfcTankType a owl:Class ;
+    rdfs:label "IfcTankType" .
+
+ifc:IfcTask a owl:Class ;
+    rdfs:label "IfcTask" .
+
+ifc:IfcTaskTime a owl:Class ;
+    rdfs:label "IfcTaskTime" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTaskTimeRecurring a owl:Class ;
+    rdfs:label "IfcTaskTimeRecurring" .
+
+ifc:IfcTaskType a owl:Class ;
+    rdfs:label "IfcTaskType" .
+
+ifc:IfcTelecomAddress a owl:Class ;
+    rdfs:label "IfcTelecomAddress" .
+
+ifc:IfcTendon a owl:Class ;
+    rdfs:label "IfcTendon" .
+
+ifc:IfcTendonAnchor a owl:Class ;
+    rdfs:label "IfcTendonAnchor" .
+
+ifc:IfcTendonAnchorType a owl:Class ;
+    rdfs:label "IfcTendonAnchorType" .
+
+ifc:IfcTendonConduit a owl:Class ;
+    rdfs:label "IfcTendonConduit" .
+
+ifc:IfcTendonConduitType a owl:Class ;
+    rdfs:label "IfcTendonConduitType" .
+
+ifc:IfcTendonType a owl:Class ;
+    rdfs:label "IfcTendonType" .
+
+ifc:IfcTessellatedFaceSet a owl:Class ;
+    rdfs:label "IfcTessellatedFaceSet" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTessellatedItem a owl:Class ;
+    rdfs:label "IfcTessellatedItem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTextLiteral a owl:Class ;
+    rdfs:label "IfcTextLiteral" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTextLiteralWithExtent a owl:Class ;
+    rdfs:label "IfcTextLiteralWithExtent" .
+
+ifc:IfcTextStyle a owl:Class ;
+    rdfs:label "IfcTextStyle" .
+
+ifc:IfcTextStyleFontModel a owl:Class ;
+    rdfs:label "IfcTextStyleFontModel" .
+
+ifc:IfcTextStyleForDefinedFont a owl:Class ;
+    rdfs:label "IfcTextStyleForDefinedFont" .
+
+ifc:IfcTextStyleTextModel a owl:Class ;
+    rdfs:label "IfcTextStyleTextModel" .
+
+ifc:IfcTextureCoordinate a owl:Class ;
+    rdfs:label "IfcTextureCoordinate" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTextureCoordinateGenerator a owl:Class ;
+    rdfs:label "IfcTextureCoordinateGenerator" .
+
+ifc:IfcTextureCoordinateIndices a owl:Class ;
+    rdfs:label "IfcTextureCoordinateIndices" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTextureCoordinateIndicesWithVoids a owl:Class ;
+    rdfs:label "IfcTextureCoordinateIndicesWithVoids" .
+
+ifc:IfcTextureMap a owl:Class ;
+    rdfs:label "IfcTextureMap" .
+
+ifc:IfcTextureVertex a owl:Class ;
+    rdfs:label "IfcTextureVertex" .
+
+ifc:IfcTextureVertexList a owl:Class ;
+    rdfs:label "IfcTextureVertexList" .
+
+ifc:IfcThirdOrderPolynomialSpiral a owl:Class ;
+    rdfs:label "IfcThirdOrderPolynomialSpiral" .
+
+ifc:IfcTimePeriod a owl:Class ;
+    rdfs:label "IfcTimePeriod" .
+
+ifc:IfcTimeSeries a owl:Class ;
+    rdfs:label "IfcTimeSeries" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTimeSeriesValue a owl:Class ;
+    rdfs:label "IfcTimeSeriesValue" .
+
+ifc:IfcTopologicalRepresentationItem a owl:Class ;
+    rdfs:label "IfcTopologicalRepresentationItem" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTopologyRepresentation a owl:Class ;
+    rdfs:label "IfcTopologyRepresentation" .
+
+ifc:IfcToroidalSurface a owl:Class ;
+    rdfs:label "IfcToroidalSurface" .
+
+ifc:IfcTrackElement a owl:Class ;
+    rdfs:label "IfcTrackElement" .
+
+ifc:IfcTrackElementType a owl:Class ;
+    rdfs:label "IfcTrackElementType" .
+
+ifc:IfcTransformer a owl:Class ;
+    rdfs:label "IfcTransformer" .
+
+ifc:IfcTransformerType a owl:Class ;
+    rdfs:label "IfcTransformerType" .
+
+ifc:IfcTransportElement a owl:Class ;
+    rdfs:label "IfcTransportElement" .
+
+ifc:IfcTransportElementType a owl:Class ;
+    rdfs:label "IfcTransportElementType" .
+
+ifc:IfcTransportationDevice a owl:Class ;
+    rdfs:label "IfcTransportationDevice" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTransportationDeviceType a owl:Class ;
+    rdfs:label "IfcTransportationDeviceType" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTrapeziumProfileDef a owl:Class ;
+    rdfs:label "IfcTrapeziumProfileDef" .
+
+ifc:IfcTriangulatedFaceSet a owl:Class ;
+    rdfs:label "IfcTriangulatedFaceSet" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTriangulatedIrregularNetwork a owl:Class ;
+    rdfs:label "IfcTriangulatedIrregularNetwork" .
+
+ifc:IfcTrimmedCurve a owl:Class ;
+    rdfs:label "IfcTrimmedCurve" .
+
+ifc:IfcTubeBundle a owl:Class ;
+    rdfs:label "IfcTubeBundle" .
+
+ifc:IfcTubeBundleType a owl:Class ;
+    rdfs:label "IfcTubeBundleType" .
+
+ifc:IfcTypeObject a owl:Class ;
+    rdfs:label "IfcTypeObject" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTypeProcess a owl:Class ;
+    rdfs:label "IfcTypeProcess" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTypeProduct a owl:Class ;
+    rdfs:label "IfcTypeProduct" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcTypeResource a owl:Class ;
+    rdfs:label "IfcTypeResource" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcUShapeProfileDef a owl:Class ;
+    rdfs:label "IfcUShapeProfileDef" .
+
+ifc:IfcUnitAssignment a owl:Class ;
+    rdfs:label "IfcUnitAssignment" .
+
+ifc:IfcUnitaryControlElement a owl:Class ;
+    rdfs:label "IfcUnitaryControlElement" .
+
+ifc:IfcUnitaryControlElementType a owl:Class ;
+    rdfs:label "IfcUnitaryControlElementType" .
+
+ifc:IfcUnitaryEquipment a owl:Class ;
+    rdfs:label "IfcUnitaryEquipment" .
+
+ifc:IfcUnitaryEquipmentType a owl:Class ;
+    rdfs:label "IfcUnitaryEquipmentType" .
+
+ifc:IfcValve a owl:Class ;
+    rdfs:label "IfcValve" .
+
+ifc:IfcValveType a owl:Class ;
+    rdfs:label "IfcValveType" .
+
+ifc:IfcVector a owl:Class ;
+    rdfs:label "IfcVector" .
+
+ifc:IfcVehicle a owl:Class ;
+    rdfs:label "IfcVehicle" .
+
+ifc:IfcVehicleType a owl:Class ;
+    rdfs:label "IfcVehicleType" .
+
+ifc:IfcVertex a owl:Class ;
+    rdfs:label "IfcVertex" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcVertexLoop a owl:Class ;
+    rdfs:label "IfcVertexLoop" .
+
+ifc:IfcVertexPoint a owl:Class ;
+    rdfs:label "IfcVertexPoint" .
+
+ifc:IfcVibrationDamper a owl:Class ;
+    rdfs:label "IfcVibrationDamper" .
+
+ifc:IfcVibrationDamperType a owl:Class ;
+    rdfs:label "IfcVibrationDamperType" .
+
+ifc:IfcVibrationIsolator a owl:Class ;
+    rdfs:label "IfcVibrationIsolator" .
+
+ifc:IfcVibrationIsolatorType a owl:Class ;
+    rdfs:label "IfcVibrationIsolatorType" .
+
+ifc:IfcVirtualElement a owl:Class ;
+    rdfs:label "IfcVirtualElement" .
+
+ifc:IfcVirtualGridIntersection a owl:Class ;
+    rdfs:label "IfcVirtualGridIntersection" .
+
+ifc:IfcVoidingFeature a owl:Class ;
+    rdfs:label "IfcVoidingFeature" .
+
+ifc:IfcWall a owl:Class ;
+    rdfs:label "IfcWall" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcWallStandardCase a owl:Class ;
+    rdfs:label "IfcWallStandardCase" .
+
+ifc:IfcWallType a owl:Class ;
+    rdfs:label "IfcWallType" .
+
+ifc:IfcWasteTerminal a owl:Class ;
+    rdfs:label "IfcWasteTerminal" .
+
+ifc:IfcWasteTerminalType a owl:Class ;
+    rdfs:label "IfcWasteTerminalType" .
+
+ifc:IfcWellKnownText a owl:Class ;
+    rdfs:label "IfcWellKnownText" .
+
+ifc:IfcWindow a owl:Class ;
+    rdfs:label "IfcWindow" .
+
+ifc:IfcWindowLiningProperties a owl:Class ;
+    rdfs:label "IfcWindowLiningProperties" .
+
+ifc:IfcWindowPanelProperties a owl:Class ;
+    rdfs:label "IfcWindowPanelProperties" .
+
+ifc:IfcWindowType a owl:Class ;
+    rdfs:label "IfcWindowType" .
+
+ifc:IfcWorkCalendar a owl:Class ;
+    rdfs:label "IfcWorkCalendar" .
+
+ifc:IfcWorkControl a owl:Class ;
+    rdfs:label "IfcWorkControl" ;
+    rdfs:subClassOf ifc: .
+
+ifc:IfcWorkPlan a owl:Class ;
+    rdfs:label "IfcWorkPlan" .
+
+ifc:IfcWorkSchedule a owl:Class ;
+    rdfs:label "IfcWorkSchedule" .
+
+ifc:IfcWorkTime a owl:Class ;
+    rdfs:label "IfcWorkTime" .
+
+ifc:IfcZShapeProfileDef a owl:Class ;
+    rdfs:label "IfcZShapeProfileDef" .
+
+ifc:IfcZone a owl:Class ;
+    rdfs:label "IfcZone" .
+

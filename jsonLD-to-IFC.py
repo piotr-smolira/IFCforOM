@@ -29,8 +29,12 @@ for s in g.subjects(RDF.type, None):
     description = g.value(s, EX.description)
     name = g.value(s, SCHEMA.name)
 
+    print(aggregate)
+
+    # Create IfcProject
     if ifctype == "IfcProject":
         entity = ifcopenshell.api.root.create_entity(ifc, ifc_class=ifctype, name=name)
+    # Create other entities
     else:
         # Create a new entity in the IFC file
         entity = ifcopenshell.api.root.create_entity(
@@ -39,7 +43,7 @@ for s in g.subjects(RDF.type, None):
 
     if composition_type:
         # Edit the attributes of the entity
-        entity = ifcopenshell.api.attribute.edit_attributes(
+        ifcopenshell.api.attribute.edit_attributes(
             ifc,
             product=entity,
             attributes={
@@ -48,15 +52,13 @@ for s in g.subjects(RDF.type, None):
             },
         )
     else:
-        entity = ifcopenshell.api.attribute.edit_attributes(
+        ifcopenshell.api.attribute.edit_attributes(
             ifc,
             product=entity,
             attributes={
                 "Description": description,
             },
         )
-
-    entity_list.append(entity)
 
     # Save mapping from RDF URI to IFC entity
     uri_to_ifc_entity[str(s)] = entity
@@ -68,25 +70,64 @@ for s, p, o in g.triples((None, EX.aggregates, None)):
     relating_uri = str(s)
     related_uri = str(o)
 
+    # print(relating_uri, related_uri)
+
     relating_object = uri_to_ifc_entity.get(relating_uri)
     related_object = uri_to_ifc_entity.get(related_uri)
+    print(
+        relating_object.Name,
+        relating_object.is_a(),
+        "  --->  ",
+        related_object.Name,
+        related_object.is_a(),
+    )
+
+    # print(relating_object)
 
     if relating_object and related_object:
         # Assign aggregation (support multiple)
         # Assign related object (instances) to relating object (type)
-        if relating_object.is_a("IfcPropertyDefinition"):  # To exclude Psets
-            None
-        elif relating_object.is_a("IfcTypeProduct"):
+        # if relating_object.is_a("IfcPropertySet"):  # To exclude Psets
+        #    None
+
+        if relating_object.is_a("IfcSpatialElement") or relating_object.is_a(
+            "IfcProject"
+        ):
+            # Assign related object (instances) to relating object (type)
+            ifcopenshell.api.aggregate.assign_object(
+                ifc, products=[related_object], relating_object=relating_object
+            )
+
+        if related_object.is_a("IfcElement") and relating_object.is_a(
+            "IfcSpatialElement"
+        ):
+            ifcopenshell.api.spatial.assign_container(
+                ifc, products=[related_object], relating_structure=relating_object
+            )
+
+        if related_object.is_a("IfcElement") and relating_object.is_a("IfcTypeProdcut"):
+            # Assign related object (instances) to relating object (type)
+            ifcopenshell.api.type.assign_type(
+                ifc,
+                related_objects=[related_object],
+                relating_type=relating_object,
+            )
+
+        """
+        if relating_object.is_a("IfcSpatialElement") or relating_object.is_a(
+            "IfcProject"
+        ):
+            ifcopenshell.api.aggregate.assign_object(
+                ifc, relating_object=relating_object, products=[related_object]
+            )
+        else:
             ifcopenshell.api.type.assign_type(
                 ifc, related_objects=[related_object], relating_type=relating_object
             )
-        else:
-            aggregate.assign_object(
-                ifc, relating_object=relating_object, products=[related_object]
-            )
-
+        """
 
 """
+
 # Generate Psets
 for s, p, o in g.triples((None, EX.hasPset, None)):
     subject_uri = str(s)
@@ -102,4 +143,4 @@ for s, p, o in g.triples((None, EX.hasPset, None)):
         )
 """
 
-ifc.write("outputs/fromJSONLD.ifc")
+ifc.write("outputs/fromJSONLD2.ifc")
