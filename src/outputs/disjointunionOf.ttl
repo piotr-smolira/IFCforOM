@@ -1,0 +1,13 @@
+@prefix ex: <https://example.org/ifc/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+ex:IfcElement a owl:Class ;
+    owl:disjointUnionOf ( ex:IfcBuiltElement ex:IfcFeatureElement ex:IfcFurnishingElement ) .
+
+ex:IfcBuiltElement a owl:Class .
+
+ex:IfcFeatureElement a owl:Class .
+
+ex:IfcFurnishingElement a owl:Class .
+
