@@ -136,55 +136,13 @@ def to_rdf_lvl2(model, g, enabled=False):
                     format_value(value, format_uri(inst) + "_" + predicate),
                 )
             )
-    return g.serialize(destination="src/outputs/Duplex-piotr.ttl", format="turtle")
-
-
-def to_rdf_lvl3(model, g, enabled=False):
-    """
-    Approach 3 - attributes of instances are presented as a separate node with a type based on the attribute name. RDF + RDF list + attributes as mix of literals and URIs (Same references as in IFC-STEP).
-    """
-    for inst in model:
-        # Instance URI
-        inst_uri = INST[inst.is_a() + "_" + str(inst.id())]
-
-        # Add first triple - instance class
-        g.add((inst_uri, RDF.type, IFC[inst.is_a()]))
-
-        # Add subClassOf
-        # inst_declaration = S.get_declaration(inst)
-
-        for attr_idx, value in enumerate(inst):
-            if value is None:
-                continue
-
-            predicate = inst.attribute_name(attr_idx)
-            print(f"Processing attribute: {inst.attribute_name(attr_idx)}")
-
-            # Create intermediate node URI for this attribute
-            attr_node_uri = INST[predicate + "_" + str(inst.id())]
-
-            # Add triple: instance -> predicate -> intermediate_node
-            g.add((inst_uri, IFC.term(predicate), attr_node_uri))
-
-            # Add triple: intermediate_node -> rdf:type -> AttributeType (optional)
-            # This gives the intermediate node a type based on the attribute
-            g.add((attr_node_uri, RDF.type, IFC[predicate]))
-
-            # Add triple: intermediate_node -> hasValue -> actual_value
-            # You can use a custom property like 'hasValue' or 'value'
-            g.add(
-                (
-                    attr_node_uri,
-                    IFC.hasValue,
-                    format_value(value, format_uri(inst) + "_" + predicate),
-                )
-            )
+    return
 
 
 # Options:
-functions = [(to_rdf_lvl1, False), (to_rdf_lvl2, True), (to_rdf_lvl3, False)]
+functions = [(to_rdf_lvl1, True), (to_rdf_lvl2, False)]
 
-to_rdf_lvl1(model, g, enabled=functions[0][0])
+to_rdf_lvl1(model, g, enabled=functions[0][1])
 to_rdf_lvl2(model, g, enabled=functions[1][1])
 
 
